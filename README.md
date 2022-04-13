@@ -9,3 +9,6 @@ Team Titan
 - Orlando
 - David
 - Gerardo
+
+## Email
+- teamtitanideo@gmail.com
