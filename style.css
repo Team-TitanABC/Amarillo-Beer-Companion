@@ -1,0 +1,49 @@
+body {
+  background: black;
+  color: #F4C70C;
+  font-family: arial;
+}
+
+.container {
+  width: 1297px;
+  height: 908px;
+  margin-left: auto;
+  margin-right: auto;
+/*   position: relative; */
+}
+
+header {
+  border-bottom: 20px solid #F4C70C;
+  height: 16%;
+
+}
+
+nav {
+
+  
+}
+
+main {
+  background-image: url("/images/ABC-Background.jpg");
+  height: 100%;
+  background-size: cover;
+/*   margin-top: -15px; */
+}
+
+footer {
+  height: 16%;
+}
+
+button {
+  border: 5px #F4C70C;
+  color: #F4C70C;
+  background-color: black;
+}
+
+#text-main {
+  padding-top: 50%;
+  margin-left: 150px;
+
+  
+}
+
