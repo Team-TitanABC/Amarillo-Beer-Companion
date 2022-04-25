@@ -1,40 +1,40 @@
-﻿Name,Style,ABV,IBU,Ingredients,oz,cost,Type,Place.0,Place.1,Place.2,Place.3,Place.4,Images
-Sud Puddles,"German, Ale, ",5.50%,21,"Liberty hops, Grainy malt",16,$6.00 ,"Pub, Brewery",Six car pub and Brewery,,,,,Six car.png
-Make Good Choices,"American, ",6.20%,50,"Peach, Tropical Fruit",16,$7.00 ,"Pub, Brewery",Six car pub and Brewery,,,,,Six car.png
-Buried Hatchet ,"Stout- American,",8.25%,50,"Creamy toffe, Roasted malt",12,$5.50 ,Bar,Georgia Street Taphouse,Texas Firehouse Sports,Walk-On's Sports Bistreaux,House Divide,The Big Texan,Buried Hatchet.png
-Guinness Draught ,Stout-Irish Dry,4.20%,45,Light malt,12,$5.75 ,Bar,Georgia Street Taphouse,Texas Firehouse Sports,Walk-On's Sports Bistreaux,House Divide,The Big Texan,Guinness.png
- Corona Premier ,Lager-Amercan Light,4%,7,"Mild, malty",12,$5.50 ,Bar,Georgia Street Taphouse,Texas Firehouse Sports,Walk-On's Sports Bistreaux,House Divide,The Big Texan,Corona.png
-Modelo Especial ,Lager-American,4.50%,18,"Honey, pilsner",12,$4.75 ,Bar,Georgia Street Taphouse,Texas Firehouse Sports,Walk-On's Sports Bistreaux,House Divide,The Big Texan,Modelo.png
-Stella Artois ,Pilsner,5%,24,Stella Artois yeast,12,$5.75 ,Bar,Georgia Street Taphouse,Texas Firehouse Sports,Walk-On's Sports Bistreaux,House Divide,The Big Texan,Stella Artois.png
-Dos Equis ,Lager,4.20%,10,Hops,12,$4.75 ,Bar,Georgia Street Taphouse,Texas Firehouse Sports,Walk-On's Sports Bistreaux,House Divide,The Big Texan,Dos Equis.png
-Coors Light ,Lager-American,4.20%,10,"Barley malt, corn,yeast",12,$3.75 ,Bar,Georgia Street Taphouse,Texas Firehouse Sports,Walk-On's Sports Bistreaux,House Divide,The Big Texan,Coors Light.png
-Miller Lite ,Lager - American ,4.20%,10,"Barley malt, corn,yeast",12,$3.75 ,Bar,Georgia Street Taphouse,Texas Firehouse Sports,Walk-On's Sports Bistreaux,House Divide,The Big Texan,Miller Lite.png
- Michelob ULTRA ,Lager-Amercan Light,4.20%,10,"Barley malt, corn,yeast",12,$3.75 ,Bar,Georgia Street Taphouse,Texas Firehouse Sports,Walk-On's Sports Bistreaux,House Divide,The Big Texan,Michelob Ultra.png
-Bud Light ,Lager-Amercan Light,4.20%,10,"Barley malt, rice,hops",12,$3.75 ,Bar,Georgia Street Taphouse,Texas Firehouse Sports,Walk-On's Sports Bistreaux,House Divide,The Big Texan,Bud Light.png
-Belgian White ,Wheat-Witbier,4.20%,9,"Coriander, orange",12,$3.75 ,Bar,Georgia Street Taphouse,Texas Firehouse Sports,Walk-On's Sports Bistreaux,House Divide,The Big Texan,Belgian White.png
-Shiner Bock ,Bock-Single,4.40%,13,Roasted maltiness,12,$4.50 ,Bar,Texas Firehouse Sports,,,,,Shiner.png
- Budweiser ,Lager - American ,5.00%,12,"Barely malt, hop",12,$3.50 ,Bar,Texas Firehouse Sports,,,,,Budweiser.png
-Abita Purple Haze,Lager,4.20%,12,Rasberry,12,$3.50 ,Bar,Walk-On's Sports Bistreaux,,,,,Abita.png
-Angry Orchard,Lager,5.00%,18,Cider,12,$4.50 ,Bar,Walk-On's Sports Bistreaux,House Divide,,,,Angry.png
-Ziegen Bock,Amber,5.00%,12,Barely malt,12,$5.50 ,"Sports, Grill",House Divide,,,,,ZIiegen.png
-Jefe Mexican,Lager - American ,4.90%,14,"German hops, Corn",16,$6.00 ,Brewery,Pondaseta Brewing Co,,,,,Pondaseta.png
-Vanna Wight  ,Ale,5.90%,35,"Pineapple, coconut",16,$6.00 ,Brewery,Pondaseta Brewing Co,,,,,Pondaseta.png
-I-40 IPA,Ipa,6.50%,65,"Flaked oats, Chinook",16,$6.00 ,Brewery,Pondaseta Brewing Co,,,,,Pondaseta.png
-The Mandarinian,Pilsner,5.00%,34,"Hop, Mandarin orange",16,$6.00 ,Brewery,Pondaseta Brewing Co,,,,,Pondaseta.png
-Princess Peach ,Witbier,6.00%,14,"Peach, Tropical Fruit",16,$6.00 ,Brewery,Pondaseta Brewing Co,,,,,Pondaseta.png
-Razz-Becky,Fruit Beer,5.00%,19,"Rasberry, Maverick malt",16,$6.00 ,Brewery,Pondaseta Brewing Co,,,,,Pondaseta.png
-Gose ‘Round,Gose,4.00%,20,"Coriander, Sea salt",16,$6.00 ,Brewery,Pondaseta Brewing Co,,,,,Pondaseta.png
-Loneliest Colour,Brown Ale,5.0%%,24,"Caramel, Dry Fruit",16,$6.00 ,Brewery,Pondaseta Brewing Co,,,,,Pondaseta.png
-2 Fast 2 Hazy,Fruit Beer,4.30%,80,Haze,16,$6.00 ,Brewery,Pondaseta Brewing Co,,,,,Pondaseta.png
-The Fast & The Hazy,Fruit Beer,6.80%,64,"Wheat, Oats, Azacca",16,$6.00 ,Brewery,Pondaseta Brewing Co,,,,,Pondaseta.png
-Pecan ,Porter,4.5,28,"Chocoalate, molasses",16,$7.50 ,"Res, Brewery",The Big Texan,,,,,Big texan.png
-Texas Red Amber,Ale,4.5,15,Carmel,16,$7.50 ,"Res, Brewery",The Big Texan,,,,,Big texan.png
-Rasberry,Wheat,5.1,22,"Wheat, Rasberry",16,$7.50 ,"Res, Brewery",The Big Texan,,,,,Big texan.png
-Honey Blond,Lager,5.75,23,"Hops, Honey",16,$7.50 ,"Res, Brewery",The Big Texan,,,,,Big texan.png
-El Hefeweizen,Wheat,5.5,13,"wheat, yeast",16,$7.50 ,"Res, Brewery",The Big Texan,,,,,Big texan.png
-Rattlesnake,Ipa,7.2,66,"Piney, herbal",16,$7.50 ,"Res, Brewery",The Big Texan,,,,,Big texan.png
-Tres Hombres,Ipa,9.1,80,Dry Hopped,16,$8.00 ,"Res, Brewery",The Big Texan,,,,,Big texan.png
-Palo Duro Pale,Lager,4,12,Mexican crisp,16,$8.00 ,"Res, Brewery",The Big Texan,,,,,Big texan.png
-Whiskey Barrel,Ale,4.75,13,german Hhallertauer,16,$8.00 ,"Res, Brewery",The Big Texan,,,,,Big texan.png
-Bomb City,Lager,9.22,26,"Aotmeal, oak",16,$8.00 ,"Res, Brewery",The Big Texan,,,,,Big texan.png
-WhoopYourDonkey,Ipa,5.5,13,"German hops, Corn",16,$8.00 ,"Res, Brewery",The Big Texan,,,,,Big texan.png
+﻿Name,Style,ABV,IBU,Ingredients,Size,Cost,Venue Type.0,Venue Type.1,Place.0,Place.1,Place.2,Place.3,Place.4,Images
+Sud Puddles,German Ale,5.50%,21,"Liberty hops, Grainy malt",16,$6.00 ,Pub,Brewery,Six car pub and Brewery,,,,,Six car.png
+Make Good Choices,National,6.20%,50,"Peach, Tropical Fruit",16,$7.00 ,Pub,Brewery,Six car pub and Brewery,,,,,Six car.png
+Buried Hatchet ,National Stout,8.25%,50,"Creamy toffe, Roasted malt",12,$5.50 ,Bar,,Georgia Street Taphouse,Texas Firehouse Sports,Walk-On's Sports Bistreaux,House Divide,The Big Texan,Buried Hatchet.png
+Guinness Draught ,Irish Dry Stout,4.20%,45,Light malt,12,$5.75 ,Bar,,Georgia Street Taphouse,Texas Firehouse Sports,Walk-On's Sports Bistreaux,House Divide,The Big Texan,Guinness.png
+Corona Premier ,Mexican Lager,4%,7,"Mild, malty",12,$5.50 ,Bar,,Georgia Street Taphouse,Texas Firehouse Sports,Walk-On's Sports Bistreaux,House Divide,The Big Texan,Corona.png
+Modelo Especial ,National Lager,4.50%,18,"Honey, pilsner",12,$4.75 ,Bar,,Georgia Street Taphouse,Texas Firehouse Sports,Walk-On's Sports Bistreaux,House Divide,The Big Texan,Modelo.png
+Stella Artois ,Pilsner,5%,24,Stella Artois yeast,12,$5.75 ,Bar,,Georgia Street Taphouse,Texas Firehouse Sports,Walk-On's Sports Bistreaux,House Divide,The Big Texan,Stella Artois.png
+Dos Equis ,Mexican Lager,4.20%,10,Hops,12,$4.75 ,Bar,,Georgia Street Taphouse,Texas Firehouse Sports,Walk-On's Sports Bistreaux,House Divide,The Big Texan,Dos Equis.png
+Coors Light ,National Lager,4.20%,10,"Barley malt, corn,yeast",12,$3.75 ,Bar,,Georgia Street Taphouse,Texas Firehouse Sports,Walk-On's Sports Bistreaux,House Divide,The Big Texan,Coors Light.png
+Miller Lite ,National Lager,4.20%,10,"Barley malt, corn,yeast",12,$3.75 ,Bar,,Georgia Street Taphouse,Texas Firehouse Sports,Walk-On's Sports Bistreaux,House Divide,The Big Texan,Miller Lite.png
+ Michelob ULTRA ,National Lager,4.20%,10,"Barley malt, corn,yeast",12,$3.75 ,Bar,,Georgia Street Taphouse,Texas Firehouse Sports,Walk-On's Sports Bistreaux,House Divide,The Big Texan,Michelob Ultra.png
+Bud Light ,National Lager,4.20%,10,"Barley malt, rice,hops",12,$3.75 ,Bar,,Georgia Street Taphouse,Texas Firehouse Sports,Walk-On's Sports Bistreaux,House Divide,The Big Texan,Bud Light.png
+Belgian White ,Wheat Witbier,4.20%,9,"Coriander, orange",12,$3.75 ,Bar,,Georgia Street Taphouse,Texas Firehouse Sports,Walk-On's Sports Bistreaux,House Divide,The Big Texan,Belgian White.png
+Shiner Bock ,Bock,4.40%,13,Roasted maltiness,12,$4.50 ,Bar,,Texas Firehouse Sports,,,,,Shiner.png
+Budweiser ,National Lager,5.00%,12,"Barely malt, hop",12,$3.50 ,Bar,,Texas Firehouse Sports,,,,,Budweiser.png
+Abita Purple Haze,Lager,4.20%,12,Rasberry,12,$3.50 ,Bar,,Walk-On's Sports Bistreaux,,,,,Abita.png
+Angry Orchard,Lager,5.00%,18,Cider,12,$4.50 ,Bar,,Walk-On's Sports Bistreaux,House Divided,,,,Angry.png
+Ziegen Bock,Amber Bock,5.00%,12,Barely malt,12,$5.50 ,Sports,Grill,House Divide,d,,,,ZIiegen.png
+Jefe Mexican,Lager,4.90%,14,"German hops, Corn",16,$6.00 ,Brewery,,Pondaseta Brewing Co,,,,,Pondaseta.png
+Vanna Wight  ,Ale,5.90%,35,"Pineapple, coconut",16,$6.00 ,Brewery,,Pondaseta Brewing Co,,,,,Pondaseta.png
+I-40 IPA,Ipa,6.50%,65,"Flaked oats, Chinook",16,$6.00 ,Brewery,,Pondaseta Brewing Co,,,,,Pondaseta.png
+The Mandarinian,Pilsner,5.00%,34,"Hop, Mandarin orange",16,$6.00 ,Brewery,,Pondaseta Brewing Co,,,,,Pondaseta.png
+Princess Peach ,Witbier,6.00%,14,"Peach, Tropical Fruit",16,$6.00 ,Brewery,,Pondaseta Brewing Co,,,,,Pondaseta.png
+Razz-Becky,Fruit Beer,5.00%,19,"Rasberry, Maverick malt",16,$6.00 ,Brewery,,Pondaseta Brewing Co,,,,,Pondaseta.png
+Gose ‘Round,Gose,4.00%,20,"Coriander, Sea salt",16,$6.00 ,Brewery,,Pondaseta Brewing Co,,,,,Pondaseta.png
+Loneliest Colour,Brown Ale,5.0%%,24,"Caramel, Dry Fruit",16,$6.00 ,Brewery,,Pondaseta Brewing Co,,,,,Pondaseta.png
+2 Fast 2 Hazy,Fruit Beer,4.30%,80,Haze,16,$6.00 ,Brewery,,Pondaseta Brewing Co,,,,,Pondaseta.png
+The Fast & The Hazy,Fruit Beer,6.80%,64,"Wheat, Oats, Azacca",16,$6.00 ,Brewery,,Pondaseta Brewing Co,,,,,Pondaseta.png
+Pecan ,Porter,4.5,28,"Chocoalate, molasses",16,$7.50 ,Restaurant,,The Big Texan,,,,,Big texan.png
+Texas Red Amber,National Ale,4.5,15,Carmel,16,$7.50 ,Restaurant,Brewery,The Big Texan,,,,,Big texan.png
+Rasberry,Wheat,5.1,22,"Wheat, Rasberry",16,$7.50 ,Restaurant,Brewery,The Big Texan,,,,,Big texan.png
+Honey Blond,Lager,5.75,23,"Hops, Honey",16,$7.50 ,Restaurant,Brewery,The Big Texan,,,,,Big texan.png
+El Hefeweizen,Wheat,5.5,13,"wheat, yeast",16,$7.50 ,Restaurant,Brewery,The Big Texan,,,,,Big texan.png
+Rattlesnake,Ipa,7.2,66,"Piney, herbal",16,$7.50 ,Restaurant,Brewery,The Big Texan,,,,,Big texan.png
+Tres Hombres,Ipa,9.1,80,Dry Hopped,16,$8.00 ,Restaurant,Brewery,The Big Texan,,,,,Big texan.png
+Palo Duro Pale,Lager,4,12,Mexican crisp,16,$8.00 ,Restaurant,Brewery,The Big Texan,,,,,Big texan.png
+Whiskey Barrel,Ale,4.75,13,german Hhallertauer,16,$8.00 ,Restaurant,Brewery,The Big Texan,,,,,Big texan.png
+Bomb City,Lager,9.22,26,"Aotmeal, oak",16,$8.00 ,Restaurant,Brewery,The Big Texan,,,,,Big texan.png
+WhoopYourDonkey,Ipa,5.5,13,"German hops, Corn",16,$8.00 ,Restaurant,Brewery,The Big Texan,,,,,Big texan.png
