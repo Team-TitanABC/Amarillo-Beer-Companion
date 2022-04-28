@@ -35,7 +35,7 @@ app.get("/search/:filter/:query", (req, res) => {
     try {
       await client.connect();
       const collection = client.db("ABC").collection("Beers");
-      const cursorArr = await collection.find({ [filter]: query }).toArray();
+      const cursorArr = await collection.find({ [filter]: query }).toArray()
       res.send(cursorArr);
       await client.close();
     } catch (err) {
