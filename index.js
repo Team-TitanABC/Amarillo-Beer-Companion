@@ -17,7 +17,7 @@ app.get("/search", (req, res) => {
       console.log("connection to mongodb was established");
       const collection = client.db("ABC").collection("Beers");
       // perform actions on the collection object
-      const beers = await collection.find();
+      const beers = await collection.find().toArray();
       res.send(beers);
       await client.close();
     } catch (e) {
