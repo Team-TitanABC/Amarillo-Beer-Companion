@@ -1,0 +1,69 @@
+body {
+    background-color: black;
+	color: #ffffff;
+	font-family: arial;
+	width: 100%;
+}
+
+h1 {
+    font-size: 40px;
+    width: 211px;
+    color: #F4C70C;
+    border-bottom: 1px solid #F4C70C;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom : 20px;
+}
+
+.top {
+height: 137px;
+}
+
+.yellowLine {
+background-color: #F4C70C;
+height: 23px;
+}
+
+.info {
+    display: flex;
+    
+}
+
+.about {
+    width: 1000px;
+}
+
+#who {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#what{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#where {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#when {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#Why {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.aboutUsright {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 40px;
+}
