@@ -19,9 +19,10 @@ app.get("/search", (req, res) => {
       // perform actions on the collection object
       const beers = await collection.find();
       res.send(beers);
-      client.close();
+      await client.close();
     } catch (e) {
       console.log(e.message);
+      res.sendStatus(400);
     }
   }
   showAllBeers();
