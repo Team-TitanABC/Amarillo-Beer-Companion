@@ -5,9 +5,10 @@ const port = 3000;
 app.use(express.json());
 app.use(express.static("../public"));
 
+const dotenv = require("dotenv")
 const { MongoClient, ServerApiVersion } = require("mongodb");
-const uri =
-  "mongodb+srv://teamtitan:fOSt21g0gCbxhYCM@abc.qtywt.mongodb.net/ABC?retryWrites=true&w=majority";
+const uri = process.env.MONGOPASSWORD
+  
 const client = new MongoClient(uri);
 
 app.get("/search", (req, res) => {
