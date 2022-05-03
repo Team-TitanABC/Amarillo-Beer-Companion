@@ -34,6 +34,12 @@ height: 23px;
     height: 641px;
 }
 
+/* img {
+    z-index: -1;
+    position: absolute;
+    justify-items: auto;
+} */
+
 .about {
     width: 1000px;
     /* border: 2px dotted red; */
@@ -89,6 +95,39 @@ width: 211px;
 } 
 
 .aboutUsright {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 40px;
+    z-index: 1;
+}
+
+.aboutUsright::after {
+    position: absolute;
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    /* border: 2px dotted red; */
+    background-image: url("images/Layer 1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .6;
+}
+
+#experience {
+    z-index: 11;
+}
+
+#skills {
+    z-index: 13;
+}
+
+#tools {
+    z-index: 14;
+}
+
+/* .aboutUsright {
     display: flex;
     flex-wrap: wrap;
     row-gap: 20px;
@@ -106,7 +145,7 @@ width: 211px;
 width: 597px;
 left: 760px;
 top: 227px;
-border-radius: 0px; */
+border-radius: 0px; */ */
 
 
 .bottomLine {
