@@ -8,7 +8,11 @@ app.use(express.static("../public"));
 const dotenv = require("dotenv")
 const { MongoClient, ServerApiVersion } = require("mongodb");
 const uri = process.env.MONGOPASSWORD
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> searchpage
 const client = new MongoClient(uri);
 
 app.get("/search", (req, res) => {
