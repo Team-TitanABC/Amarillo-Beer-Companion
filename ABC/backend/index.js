@@ -1,17 +1,14 @@
-require("dotenv").config()
-
 const express = require("express");
 const app = express();
 const port = 3000;
 
 app.use(express.json());
-app.use(express.static("./public"));
+app.use(express.static("../public"));
 
+const dotenv = require("dotenv")
 const { MongoClient, ServerApiVersion } = require("mongodb");
 const uri = process.env.MONGOPASSWORD
-
-console.log('the uri is: ', uri)
-
+  
 const client = new MongoClient(uri);
 
 app.get("/search", (req, res) => {

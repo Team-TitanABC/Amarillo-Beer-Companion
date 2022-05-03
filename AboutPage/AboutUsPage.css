@@ -1,8 +1,8 @@
 body {
     background-color: black;
-	color: #ffffff;
-	font-family: arial;
-	width: 100%;
+    color: #ffffff;
+    font-family: arial;
+    width: 100%;
     /* min-width: 500px; */
 }
 
@@ -17,16 +17,16 @@ h1 {
 p {
     font-size: 18px;
     font-weight: 700;
-    margin-bottom : 20px;
+    margin-bottom: 20px;
 }
 
 .top {
-height: 137px;
+    height: 137px;
 }
 
 .yellowLine {
-background-color: #F4C70C;
-height: 23px;
+    background-color: #F4C70C;
+    height: 23px;
 }
 
 .info {
@@ -45,11 +45,11 @@ height: 23px;
     /* border: 2px dotted red; */
 }
 
-.about > h1 {
+.about>h1 {
     width: 299px;
 }
 
-.about > p{
+.about>p {
     font-size: 18px;
 }
 
@@ -58,7 +58,7 @@ height: 23px;
     font-size: 25px;
 }
 
-#what{
+#what {
     font-weight: 700;
     font-size: 25px;
 }
@@ -78,21 +78,23 @@ height: 23px;
     font-size: 25px;
 }
 
- #experience {
-margin-right: 56px;
-} 
+#experience {
+    margin-right: 56px;
+}
+
 
 /* #skills > h1 {
     width: 211px;
 }
 /*  */
-#tools > h1 {
-width: 211px;
+
+#tools>h1 {
+    width: 211px;
 }
 
- #tools > p{
+#tools>p {
     font-size: 18px;
-} 
+}
 
 .aboutUsright {
     position: relative;
@@ -137,7 +139,6 @@ width: 211px;
     background-repeat: no-repeat;
     background-position:center;
     background-blend-mode: luminosity; */
-
 }
 
 
@@ -146,7 +147,6 @@ width: 597px;
 left: 760px;
 top: 227px;
 border-radius: 0px; */ */
-
 
 .bottomLine {
     background-color: #F4C70C;
