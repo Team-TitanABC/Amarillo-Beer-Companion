@@ -1,0 +1,152 @@
+
+
+body {
+    background-color: black;
+	color: #ffffff;
+	font-family: arial;
+	width: 100%;
+    /* min-width: 500px; */
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 40px;
+    /* width: 211px; */
+    color: #F4C70C;
+    border-bottom: 1px solid #F4C70C;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom : 20px;
+}
+
+ .top {
+height: 137px;
+}
+
+.yellowLine {
+background-color: #F4C70C;
+height: 23px;
+}
+
+.info {
+    display: flex;
+    height: 641px;
+}
+
+/* img {
+    z-index: -1;
+    position: absolute;
+    justify-items: auto;
+} */
+
+.about {
+    width: 1000px;
+    /* border: 2px dotted red; */
+}
+
+.about > h1 {
+    width: 299px;
+}
+
+.about > p{
+    font-size: 18px;
+}
+
+#who {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+#what{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+#where {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+#when {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+#Why {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+ #experience {
+margin-right: 56px;
+} 
+
+/* #skills > h1 {
+    width: 211px;
+}
+/*  */
+#tools > h1 {
+width: 211px;
+}
+
+ #tools > p{
+    font-size: 18px;
+} 
+
+.aboutUsright {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 40px;
+    z-index: 1;
+}
+
+.aboutUsright::after {
+    position: absolute;
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    /* border: 2px dotted red; */
+    /* background-image: url("images/Layer 1.png"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .6;
+}
+
+#experience {
+    z-index: 11;
+}
+
+#skills {
+    z-index: 13;
+}
+
+#tools {
+    z-index: 14;
+}
+
+/* .aboutUsright {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 40px;
+    /* border: 2px dotted red; */
+    /* background-image: url("images/Layer 1.png");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-blend-mode: luminosity; */
+
+
+
+.bottomLine {
+    background-color: #F4C70C;
+    height: 6px;
+}
+
+/* footer {
+    background-color: #e20f08;
+} */
