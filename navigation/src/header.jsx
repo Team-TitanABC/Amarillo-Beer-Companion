@@ -8,12 +8,14 @@ import './menu.css';
 function Menu() {
   
 return (
-  <div className="topnav">
+  <div className="topnav" d-flex gap-2 align-items-center>
+  {/* <div className="topnav" d-flex gap-2> */}
+
     
     <div id="nav-left">
-      <a className="active" href="index.html">Homez</a>
-      <a href="about.html">Aboutz</a>
-      <a href="contact.html">Contactz</a>
+      <a className="active" href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </div>
     
     <div id="nav-center">
