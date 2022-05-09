@@ -1,6 +1,7 @@
 require("dotenv").config()
 
 const express = require("express");
+
 const app = express();
 const port = 3000;
 
@@ -54,8 +55,20 @@ app.get("/search/:filter/:query", (req, res) => {
   searchBeers();
 });
 
+app.get('/search.html', (req, res) => {
+  res.sendFile('/search.html')
+})
+
+app.get('/AboutUsPage.html', (req, res) => {
+  res.sendFile('/AboutUsPage.html')
+})
+
+app.get('/contact.html', (req, res) => {
+  res.sendFile('/contact.html')
+})
+
 app.get("/", (req, res) => {
-  res.send("This is a test");
+  res.sendFile('index.html');
 });
 
 app.listen(port);
