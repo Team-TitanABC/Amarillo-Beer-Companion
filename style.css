@@ -1,0 +1,170 @@
+body {
+  background: black;
+  color: #F4C70C;
+  font-family: arial;
+}
+
+.container {
+  width: 1297px;
+  height: 908px;
+  min-width: 640px;
+  min-height: 1136px;
+  
+  margin-left: auto;
+  margin-right: auto;
+  
+/*   position: relative; */
+}
+
+header {
+  border-bottom: 20px solid #F4C70C;
+  height: 16%;
+
+}
+
+nav {
+
+  
+}
+
+main {
+  background-color: black;
+  background-image: url("images/ABC-Background2.jpg");
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: inherit;
+  /* position: absolute; */
+
+
+}
+
+footer {
+  height: 16%;
+
+  
+}
+
+
+
+#main-div {
+  width: 500px;
+  
+}
+
+/* ===== BUTTON PROPERTIES ===== */
+.button {
+  border: 3px solid #F4C70C;
+  border-radius: 2px;
+  color: white;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 15px;
+  left: 25%;
+  position: relative;
+  margin-top: 175px;
+  text-decoration: none;
+  cursor: pointer;
+  position: absolute;
+}
+
+.button a:link {
+  color: #ccc;
+}
+.button a:visited {
+  color: #095484;
+}
+.button a:hover {
+  color: #8ebf42;
+}
+.button a:active {
+  color: #800000;
+}
+      /* 
+      .button a:hover {
+        border: 3px solid #F4C70C;
+        border-radius: 2px;
+        color: white;
+        background: rgba(0, 0, 0, 0.25);
+        padding: 15px;
+        left: 25%;
+        position: relative;
+        margin-top: 25px;
+      } */
+
+/* ===== HOME PAGE TEXT BOXES ===== */
+.text-main {
+/*   padding-top: 50%; */
+  margin-left: 150px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  
+  width: 350px;
+  height: 150px;
+  
+  border-radius: 5px;
+  z-indez: 1;
+  display: block;
+
+    transform: translate(-15%, 50%)
+
+  
+}
+#text-main {
+/*   padding: 0  */
+  padding: 0 25px;
+/*   margin-left: 150px; */
+  color: white;
+  position: inherit;
+/*   top: 225%; 
+  left: 50%; */
+  z-index: 1; 
+
+}
+
+.main-image {
+  width: 60%;
+  margin: 100px auto -50px;
+}
+.main-image img {
+  min-width: 10%;
+  width: 100%;
+  padding: 0 25px;
+}
+
+/* ===== SEARCH PAGE ===== */
+.main-search {
+  /* height: 500px; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50px 100px;
+  grid-template-areas: 
+    "one one one"
+    "two three three"
+    ;
+  gap: 20px;
+  
+  
+}
+
+h1 {
+  grid-area: one;
+  color: #F4C70C;
+  font-size: 150%;
+  text-align: center;
+  height: 100%;
+}
+
+.search-bar {
+  grid-area: two;
+  /* position: flex; */
+  background: rgba(255, 255, 255, 0.1);
+  overflow: scroll;
+  height: 700px;
+}
+
+.search-results {
+  grid-area: three;
+  /* position: flex; */
+  background-color: white;
+  height: 700px;
+}
