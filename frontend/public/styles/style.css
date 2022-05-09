@@ -94,7 +94,7 @@ footer {
     width: 350px;
     height: 150px;
     border-radius: 5px;
-    z-indez: 1;
+    z-index: 1;
     display: block;
     transform: translate(-15%, 50%)
 }
