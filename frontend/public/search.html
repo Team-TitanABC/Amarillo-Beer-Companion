@@ -7,6 +7,7 @@
     <title>Amarillo Beer Companion</title>
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
     <link href="styles/menu.css" rel="stylesheet" type="text/css" />
+    <link href="styles/BeerCard.css.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -42,9 +43,22 @@
             </aside>
 
             <div class="search-results">
-                <img id="imageElement"></img>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                <img id="imageElement"alt="beer" style="width:300px;height:300px;"></img>
                 <img id="imageElement2"></img>
                 <p class="error"></p>
+                </div>
+                    <div class="flip-card-back">
+                      <h1 id="Name"></h1> 
+                      <p id ="Ingredients"></p> 
+                      <p id="Style"></p>
+                      <p id="Place"></p>
+                      
+                    </div>
+                  </div>
+                </div>
 
 
             </div>
