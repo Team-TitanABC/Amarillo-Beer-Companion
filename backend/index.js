@@ -34,12 +34,16 @@ app.get("/search", (req, res) => {
 
 app.get("/search/:filter/:query", (req, res) => {
   async function searchBeers() {
-    const query = req.params.query;
+    const query = req.params.query.split("_").join(" ");
     const filter = req.params.filter;
     try {
       await client.connect();
       const collection = client.db("ABC").collection("Beers");
-      const cursorArr = await collection.find({ [filter]: query }).toArray()
+      
+      // const cursorArr = await collection.find({ [filter]: query }).toArray()
+      const cursorArr = await collection.find({ [filter]: {$regex: query, $options: "i"} }).toArray()
+
+
       res.send(cursorArr);
       await client.close();
     } catch (err) {
