@@ -8,7 +8,7 @@ import './menu.css';
 function Menu() {
   
 return (
-  <div className="topnav" d-flex gap-2 align-items-center>
+  <div className="topnav">
   {/* <div className="topnav" d-flex gap-2> */}
 
     
