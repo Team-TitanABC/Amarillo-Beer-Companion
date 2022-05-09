@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 // Import your component on the line below and name it Bar
 // import Home from './Home.js';
-import Menu from './header.jsx';
+import Menu from './components/header.jsx';
 import {BrowserRouter, Routes, Root} from 'react-router-dom'
 
 

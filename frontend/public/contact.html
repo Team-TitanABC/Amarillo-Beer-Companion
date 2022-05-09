@@ -1,118 +1,118 @@
 <!DOCTYPE html>
 <html>
-  <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Contact page</title>
-	<link href="contact.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-	  <div class = top>
-		  <a href = #>home</a>
-		  <a href = #> contact</a>
-		  <a href = #> About</a>
-		  <img src = "images/ABC.png">
-	  </div>
-	  <div id = yellowLine>
-		  
-	  </div>
-	  <div class = title>
-		  <h1>Contact us </h1>
-	  </div>
-	 <div class = content>
-		 <div class = "contactFormBox">
-<div class = "messageBox">
-		<div class = "MessageUsTitle">
-			<h1><span id = "mTitle">Message Us</span></h1>
-		  </div>
-		  <div class = "messageP">
-			<p>If you wish to get in contact <br> 
-			please leave a detailed <br>
-			message</p>
-		  </div> 
-		  </div>
-		  <form id="form">
-			  <!-- <div class="field">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Contact page</title>
+    <link href="styles/contact.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class=t op>
+        <a href=#>home</a>
+        <a href=#> contact</a>
+        <a href=#> About</a>
+        <img src="images/ABC.png">
+    </div>
+    <div id=y ellowLine>
+
+    </div>
+    <div class=t itle>
+        <h1>Contact us </h1>
+    </div>
+    <div class=c ontent>
+        <div class="contactFormBox">
+            <div class="messageBox">
+                <div class="MessageUsTitle">
+                    <h1><span id="mTitle">Message Us</span></h1>
+                </div>
+                <div class="messageP">
+                    <p>If you wish to get in contact <br> please leave a detailed <br> message
+                    </p>
+                </div>
+            </div>
+            <form id="form">
+                <!-- <div class="field">
 				<label for="to_name"></label>
 				<input type="text" name="to_name" id="to_name">
 			  </div> -->
-			  <h1><span id = subtitle>Name</span></h1>
-			  <div class = "fullName">
-				  <div class="nameAndLast">
-		  
-					<label id = "labelName" for="from_name">First</label>
-					<input type="text" name="from_name" id="from_name">
-				  </div>
-				  <div class="nameAndLast">
-					  <label id = "labelName" for="from_lastName">Last</label>
-					  <input type="text" name="from_lastName" id="from_lastName">
-					</div>
-			  </div>
-			  <div class="userEmail">
-				<label for="reply_to"><h2>Email</h2></label>
-				<input type="text" name="reply_to" id="reply_to">
-			  </div>
-			  <div class="message">
-				<label for="message"><h2>Comments</h2></label>
-				<textarea id="Message" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-				<!-- <input type="text" name="message" id="message"> -->
-			  </div>
-			
-			  <input type="submit" id="button" value="Send Email" >
-			</form>
-		  
-			<script type="text/javascript"
-			  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> 
-		   
-		   <script type="text/javascript">
-			  emailjs.init('SOg6K0LVjIgg6idIQ')
-			  const btn = document.getElementById('button');
-		  
-			  
-		  document.getElementById('form')
-		   .addEventListener('submit', function(event) {
-			 event.preventDefault();
-			 form.reset()
-		  
-			 btn.value = 'Sending...';
-		  
-			 const serviceID = 'service_c616rbb';
-			 const templateID = 'template_ppjxdui';
-		  
-			 emailjs.sendForm(serviceID, templateID, this)
-			  .then(() => {
-				btn.value = 'Send Email';
-			  //   alert('Sent!');
-			  }, (err) => {
-				btn.value = 'Send Email';
-				alert(JSON.stringify(err));
-			  });
-		  });
-			</script>
-		 </div>
+                <h1><span id=s ubtitle>Name</span></h1>
+                <div class="fullName">
+                    <div class="nameAndLast">
 
-<div class = "socialMedia">
-	<div class = "facebookLink">
-		<a href = "https://www.facebook.com/AmarilloBeerCompanion">
-			<img src = "images/Layer 1.png" alt = "facebook logo" target = "_blank" rel="noreferrer noopener">
-		</a>
-	</div>
-<div class = "InstragramLink">
-	<a href = "https://www.instagram.com/amarillobeercompanion/?hl=en">
-		<img src = "images/Layer 5 (3).png" alt = "Instragram logo" target = "_blank" rel="noreferrer noopener">
-	</a>
-</div>
-<div class = "gitHubLink">
-	<a href = "">
-		<img src = "images/Layer 4.png" alt = "gitHub logo" target = "_blank" rel="noreferrer noopener">
-	</a>
-</div>
-</div>
+                        <label id="labelName" for="from_name">First</label>
+                        <input type="text" name="from_name" id="from_name">
+                    </div>
+                    <div class="nameAndLast">
+                        <label id="labelName" for="from_lastName">Last</label>
+                        <input type="text" name="from_lastName" id="from_lastName">
+                    </div>
+                </div>
+                <div class="userEmail">
+                    <label for="reply_to"><h2>Email</h2></label>
+                    <input type="text" name="reply_to" id="reply_to">
+                </div>
+                <div class="message">
+                    <label for="message"><h2>Comments</h2></label>
+                    <textarea id="Message" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    <!-- <input type="text" name="message" id="message"> -->
+                </div>
 
-<!-- https://www.facebook.com/AmarilloBeerCompanion -->
-<!-- https://www.instagram.com/amarillobeercompanion/?hl=en -->
+                <input type="submit" id="button" value="Send Email">
+            </form>
 
-		  <!-- <div class = contact>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+            <script type="text/javascript">
+                emailjs.init('SOg6K0LVjIgg6idIQ')
+                const btn = document.getElementById('button');
+
+
+                document.getElementById('form')
+                    .addEventListener('submit', function(event) {
+                        event.preventDefault();
+                        form.reset()
+
+                        btn.value = 'Sending...';
+
+                        const serviceID = 'service_c616rbb';
+                        const templateID = 'template_ppjxdui';
+
+                        emailjs.sendForm(serviceID, templateID, this)
+                            .then(() => {
+                                btn.value = 'Send Email';
+                                //   alert('Sent!');
+                            }, (err) => {
+                                btn.value = 'Send Email';
+                                alert(JSON.stringify(err));
+                            });
+                    });
+            </script>
+        </div>
+
+        <div class="socialMedia">
+            <div class="facebookLink">
+                <a href="https://www.facebook.com/AmarilloBeerCompanion">
+                    <img src="images/Layer 1.png" alt="facebook logo" target="_blank" rel="noreferrer noopener">
+                </a>
+            </div>
+            <div class="InstragramLink">
+                <a href="https://www.instagram.com/amarillobeercompanion/?hl=en">
+                    <img src="images/Layer 5 (3).png" alt="Instragram logo" target="_blank" rel="noreferrer noopener">
+                </a>
+            </div>
+            <div class="gitHubLink">
+                <a href="">
+                    <img src="images/Layer 4.png" alt="gitHub logo" target="_blank" rel="noreferrer noopener">
+                </a>
+            </div>
+        </div>
+
+        <!-- https://www.facebook.com/AmarilloBeerCompanion -->
+        <!-- https://www.instagram.com/amarillobeercompanion/?hl=en -->
+
+        <!-- <div class = contact>
 			  <div id = address>
 			  <h1> ADDRESS</h1>
 			  <p> Amarillo Beer Companion<br>
@@ -129,14 +129,15 @@
 		  </div>
 			  
 		  </div> -->
-<!-- </div> -->
-<footer>
-	<div class = bottomInfo>
-		<a href = #>privacy</a>
-		<a href = #>Terms of use</a>
-</footer>
-		  
-	  </div>
-	<script src="script.js"></script>
-  </body>
+        <!-- </div> -->
+        <footer>
+            <div class=b ottomInfo>
+                <a href=#>privacy</a>
+                <a href=#>Terms of use</a>
+        </footer>
+
+        </div>
+        <script src="script.js"></script>
+</body>
+
 </html>

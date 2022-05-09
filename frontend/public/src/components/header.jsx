@@ -8,18 +8,26 @@ import './menu.css';
 function Menu() {
   
 return (
-  <div class="topnav">
-      <a class="active" href="#home">Homez</a>
-      <a href="#contact">Contactz</a>
-      <a href="#about">Aboutz</a>
-      <img src="images/ABC-Logo.png" width="100"></img>
+  <div className="topnav" d-flex gap-2 align-items-center>
+  {/* <div className="topnav" d-flex gap-2> */}
 
-      <input type="text" placeholder="Search..." />
-      <a href="#signup">Sign Up</a>
-      <a href="#login">Login</a>
+    
+    <div id="nav-left">
+      <a className="active" href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </div>
-)
+    
+    <div id="nav-center">
+      <img src="../images/ABC-Logo.png" width="100"/>
+    </div>
+    
+    <div id="nav-right">
+      <a href="search.html"><input type="text" placeholder="Search..." /></a>
+    </div>
+  
+  </div>
+  )  
 }
 
-// Export your component on the line below:
 export default Menu
