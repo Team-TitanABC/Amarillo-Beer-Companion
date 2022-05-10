@@ -6,7 +6,7 @@ const app = express();
 const port = process.env.PORT
 
 app.use(express.json());
-app.use(express.static("../frontend/public"));
+app.use(express.static("./frontend/public"));
 
 const { MongoClient, ServerApiVersion } = require("mongodb");
 const uri = process.env.MONGOPASSWORD
