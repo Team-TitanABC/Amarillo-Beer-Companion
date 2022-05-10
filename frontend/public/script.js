@@ -11,9 +11,26 @@ async function ButtonClicked() {
 	//document.getElementById('Style').innerText = ""
 	
 	const imageFile = json[0].Images
+	
 
 	//https://raw.githubusercontent.com/Team-TitanABC/Amarillo-Beer-Companion/main/PUBLIC/images/Beer/Shiner.png
 	document.getElementById('imageElement' ).src = `https://github.com/Team-TitanABC/Amarillo-Beer-Companion/blob/main/frontend/public/images/beers/${json[0].Images}?raw=true`
+	
+
+	document.getElementById('Name').innerText = json[0].Name
+	document.getElementById('Ingredients').innerText = json[0].Ingredients
+	document.getElementById('Style').innerText = json[0].Style
+	document.getElementById('Place').innerText = json[0].Place[0]
+	document.getElementById('Placeone').innerText = json[0].Place[1]
+	document.getElementById('Placetwo').innerText = json[0].Place[2]
+	document.getElementById('Placethree').innerText = json[0].Place[3]
+	document.getElementById('Placefour').innerText = json[0].Place[4]
+
+	
+	
+	
+	
+	
 	document.querySelector('.flip-card').style.display = 'block'
 
 	document.getElementsByClassName('error')[0].innerText = ""
