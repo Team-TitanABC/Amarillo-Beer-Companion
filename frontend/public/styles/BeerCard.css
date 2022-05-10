@@ -40,6 +40,10 @@
     transform: rotateY(180deg);
 }
 
-#imageElement {
+.imageElement {
     object-fit: contain;
+}
+
+.active {
+    display: block;
 }
