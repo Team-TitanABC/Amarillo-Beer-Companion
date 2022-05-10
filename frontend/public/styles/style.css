@@ -12,76 +12,40 @@ body {
     margin-left: auto;
     margin-right: auto;
     /*   position: relative; */
+
 }
 
 header {
     border-bottom: 20px solid #F4C70C;
-    height: 16%;
+
 }
 
 main {
     background-color: black;
-    background-image: url("./images/ABC-Background2.jpg");
+    /* background-image: url("images/ABC-Background.jpg"); */
+    background: url(../images/ABC-Background.jpg);
     height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
     width: inherit;
+    margin-top: -100px;
     /* position: absolute; */
 }
 
 footer {
     height: 16%;
+    border-top: 5px solid #F4C70C;
+
 }
 
 #main-div {
     width: 500px;
+    /* margin-top: 125px; */
 }
 
-
-/* ===== BUTTON PROPERTIES ===== */
-
-.button {
-    border: 3px solid #F4C70C;
-    border-radius: 2px;
-    color: white;
-    background: rgba(0, 0, 0, 0.25);
-    padding: 15px;
-    left: 25%;
-    position: relative;
-    margin-top: 175px;
-    text-decoration: none;
-    cursor: pointer;
-    position: absolute;
+#main-div img {
+  
 }
-
-.button a:link {
-    color: #ccc;
-}
-
-.button a:visited {
-    color: #095484;
-}
-
-.button a:hover {
-    color: #8ebf42;
-}
-
-.button a:active {
-    color: #800000;
-}
-
-
-/* 
-	  .button a:hover {
-		border: 3px solid #F4C70C;
-		border-radius: 2px;
-		color: white;
-		background: rgba(0, 0, 0, 0.25);
-		padding: 15px;
-		left: 25%;
-		position: relative;
-		margin-top: 25px;
-	  } */
 
 
 /* ===== HOME PAGE TEXT BOXES ===== */
@@ -118,9 +82,55 @@ footer {
 .main-image img {
     min-width: 10%;
     width: 100%;
-    padding: 0 25px;
+    padding: 75px 25px;
+    padding-bottom: 0;
 }
 
+
+/* ===== BUTTON PROPERTIES ===== */
+
+.button {
+    border: 3px solid #F4C70C;
+    border-radius: 2px;
+    color: white;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    left: 25%;
+    position: relative;
+    margin-top: 175px;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+}
+
+a.button:link {
+    color: #ccc;
+}
+
+a.button:visited {
+    color: white;
+}
+
+a.button:hover {
+    color: #F4C70C;
+    background-color: #333333;
+}
+
+a.button:active {
+    color: #800000;
+}
+
+    /* 
+    .button a:hover {
+    border: 3px solid #F4C70C;
+    border-radius: 2px;
+    color: white;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    left: 25%;
+    position: relative;
+    margin-top: 25px;
+    } */
 
 /* ===== SEARCH PAGE ===== */
 
@@ -131,9 +141,10 @@ footer {
     grid-template-rows: 50px 100px;
     grid-template-areas: "one one one" "two three three";
     gap: 20px;
+    margin-top: 5px;
 }
 
-h1 {
+.main-search h1 {
     grid-area: one;
     color: #F4C70C;
     font-size: 150%;
@@ -154,4 +165,34 @@ h1 {
     /* position: flex; */
     background-color: white;
     height: 700px;
+}
+
+/* ===== SEARCH BAR ===== */
+
+#userInput {
+  width: 85%;
+  margin-left: 15px;
+  margin-top: 10px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  padding: 5px;
+}
+
+.search-button {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-left: -33px;
+  margin-top: 5px;
+}
+
+.search-button img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  cursor: pointer;
+  margin-bottom: -8px;
+  background-color: #F4C70C;
+  padding: 3px;
+  padding-left: 5px;
 }
