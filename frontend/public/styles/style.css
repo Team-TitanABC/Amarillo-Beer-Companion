@@ -12,12 +12,10 @@ body {
     margin-left: auto;
     margin-right: auto;
     /*   position: relative; */
-
 }
 
 header {
     border-bottom: 20px solid #F4C70C;
-
 }
 
 main {
@@ -35,7 +33,6 @@ main {
 footer {
     height: 16%;
     border-top: 5px solid #F4C70C;
-
 }
 
 #main-div {
@@ -43,9 +40,7 @@ footer {
     /* margin-top: 125px; */
 }
 
-#main-div img {
-  
-}
+#main-div img {}
 
 
 /* ===== HOME PAGE TEXT BOXES ===== */
@@ -120,7 +115,8 @@ a.button:active {
     color: #800000;
 }
 
-    /* 
+
+/* 
     .button a:hover {
     border: 3px solid #F4C70C;
     border-radius: 2px;
@@ -131,6 +127,7 @@ a.button:active {
     position: relative;
     margin-top: 25px;
     } */
+
 
 /* ===== SEARCH PAGE ===== */
 
@@ -156,7 +153,7 @@ a.button:active {
     grid-area: two;
     /* position: flex; */
     background: rgba(255, 255, 255, 0.1);
-    overflow: scroll;
+    overflow: auto;
     height: 700px;
 }
 
@@ -167,32 +164,33 @@ a.button:active {
     height: 700px;
 }
 
+
 /* ===== SEARCH BAR ===== */
 
 #userInput {
-  width: 85%;
-  margin-left: 15px;
-  margin-top: 10px;
-  border-radius: 5px 0 0 5px;
-  border: none;
-  padding: 5px;
+    width: 85%;
+    margin-left: 15px;
+    margin-top: 10px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    padding: 5px;
 }
 
 .search-button {
-  background: transparent;
-  border: none;
-  outline: none;
-  margin-left: -33px;
-  margin-top: 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-left: -33px;
+    margin-top: 5px;
 }
 
 .search-button img {
-  width: 20px;
-  height: 20px;
-  object-fit: cover;
-  cursor: pointer;
-  margin-bottom: -8px;
-  background-color: #F4C70C;
-  padding: 3px;
-  padding-left: 5px;
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    cursor: pointer;
+    margin-bottom: -8px;
+    background-color: #F4C70C;
+    padding: 3px;
+    padding-left: 5px;
 }
