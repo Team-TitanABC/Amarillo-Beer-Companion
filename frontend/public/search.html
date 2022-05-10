@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Amarillo Beer Companion</title>
+    <title>[ABC] Beer Search</title>
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
     <link href="styles/menu.css" rel="stylesheet" type="text/css" />
     <link href="styles/BeerCard.css.css" rel="stylesheet" type="text/css" />
@@ -13,22 +13,28 @@
 <body>
     <div class="container">
 
-        <header>
-            <nav id="navigation">
-                <a href="#" id="menu-icon"></a>
-                <ul class="nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </nav>
-
-            <img src="images/ABC-Logo.png" width="100"></img>
-            <br>
-            <input></input>
-            <p>Login</p>
-
-        </header>
+    <header class="navigation">                  
+        <nav id="nav-left">
+            <a href="#" id="menu-icon"></a>
+            
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+        </nav>
+          
+        <nav id="nav-center">
+          <img src="images/ABC-Logo.png" width="100"></img>
+        </nav>
+          
+        <nav id="nav-right">
+            <ul class="nav">
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>              
+    </header>
 
         <main class="main-search" style="background-image:none;">
             <h1>Find Your Brewski</h1>
@@ -36,8 +42,10 @@
             <aside class="search-bar">
 
 
-                <input id="userInput" placeholder="Beer:"></input>
-                <button onclick="ButtonClicked()">Search</button>
+                <input id="userInput" placeholder="What'll ya' have?!"></input>
+                <button class="search-button" onclick="ButtonClicked()">
+                    <img src="images/search.png" />
+                </button>
 
 
             </aside>
@@ -60,19 +68,17 @@
                   </div>
                 </div>
 
-
             </div>
         </main>
 
-        <footer>
+        <footer class="navigation">
             <ul class="nav">
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="#">Privacy</a></li>
                 <li><a href="#">Terms of Use</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
+                <li><a href="https://www.facebook.com/AmarilloBeerCompanion" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/amarillobeercompanion" target="_blank">Instagram</a></li>
             </ul>
-
         </footer>
 
     </div>

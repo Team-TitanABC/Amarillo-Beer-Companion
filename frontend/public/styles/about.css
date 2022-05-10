@@ -24,11 +24,6 @@ p {
     height: 137px;
 }
 
-.yellowLine {
-    background-color: #F4C70C;
-    height: 23px;
-}
-
 .info {
     display: flex;
     height: 641px;

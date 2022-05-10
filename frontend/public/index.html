@@ -3,41 +3,40 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Amarillo Beer Companion</title>
-        <link href="styles/style.css" rel="stylesheet" type="text/css" />
-        <link href="styles/menu.css" rel="stylesheet" type="text/css" />
-    </head>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="styles/menu.css" rel="stylesheet" type="text/css" />
+    <title>Amarillo Beer Companion [ABC]</title>
+</head>
 
     <body>
         <div class="container">
 
-            <div id="root"></div>
+            <!-- <div id="root"></div> -->
 
-            <!-- <header>
-          
-          <nav id="navigation">
-            <a href="#" id="menu-icon"></a>
-            <ul class="nav">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">About</a></li>
-            </ul>
-          </nav>
-          
-          <img src="images/ABC-Logo.png" width="100"></img>
-          <br>
-          <input></input>
-          <p>Login</p>
-          
-        </header> -->
-
+        <header class="navigation">                  
+            <nav id="nav-left">
+                <a href="#" id="menu-icon"></a>
+                
+                <ul class="nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+            </nav>
+              
+            <nav id="nav-center">
+              <img src="images/ABC-Logo.png" width="100"></img>
+            </nav>
+              
+            <nav id="nav-right">
+                <ul class="nav">
+                    <li><a href="search.html"><input id="nav-search" type="text" placeholder="Search Your Brew..." /></input></a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>              
+        </header>
 
             <main>
 
@@ -53,33 +52,27 @@
                             <hr color=#F4C70C></hr>
                             <p>The Greatest Beer App for an Easy Search. Join the Fun!</p>
                         </div>
-                        <a href="/search.html" class="button">Find Your Brewski</a>
+                        <a href="search.html" class="button">Find Your Brewski</a>
                     </div>
 
                 </div>
 
             </main>
 
-            <footer>
+        <footer class="navigation">
                 <ul class="nav">
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="#">Privacy</a></li>
                     <li><a href="#">Terms of Use</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/AmarilloBeerCompanion" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/amarillobeercompanion" target="_blank">Instagram</a></li>
                 </ul>
-
-            </footer>
+        </footer>
 
         </div>
 
 
-
-
     </body>
-
-
-
 
     <script src="index.js"></script>
     <script type="module" src="/src/index.jsx"></script>

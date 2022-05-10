@@ -1,10 +1,10 @@
-body {
+/* body {
 	background: black;
 	color: #ffffff;
 	font-family: arial;
 	width: 100%;
 	height: 896px;
-  }
+  } */
 
 p  {
 	color: white;
@@ -18,18 +18,11 @@ h1, h2, h3 {
 .contactFormBox {
 	display: flex;
 	flex-direction: column;
-	
-	
+
 }
 
 .top {
 	height: 130px;
-}
-
-#yellowLine {
-
-	height: 23px;
-	background-color: #f4c70c
 }
 
 
@@ -76,12 +69,18 @@ link {
 }
 
 #from_name {
-margin-right: 20px; 
-margin-bottom: 10px;
+	margin-right: 10px; 
+	/* margin-bottom: 10px; */
+	width: 150px;
+}
+
+#from_lastname {
+	width: 200px;
 }
 
 #reply_to {
 	margin-bottom: 10px;
+	width: 350px;
 }
 
 .userEmail {
@@ -93,7 +92,7 @@ margin-bottom: 10px;
 .message {
     display: flex;
     flex-direction: column;
-    width: 326px;
+    width: 350px;
 
 }
 
@@ -104,20 +103,21 @@ box-sizing: border-box;
 }
 
 .messageP {
-position: relative;
-bottom: 20px;
-height: 60px;
-width: 232px;
+	position: relative;
+	bottom: 20px;
+	height: 60px;
+	width: 232px;
 }
 
 .nameAndLast {
     display: flex;
-    flex-direction: column;
     width: 148px;
 }
 
 .fullName {
     display: flex;
+    flex-direction: column;
+	justify-content: space-evenly;
 
 
 }
@@ -130,11 +130,38 @@ width: 232px;
 }
 
 #labelName {
-color: #ffffff;
+	color: #ffffff;
 } 
 
 #button {
-margin-top: 10px;
+	border: 3px solid #F4C70C;
+	border-radius: 2px;
+	color: white;
+	background: rgba(0, 0, 0, 0.25);
+	padding: 5px 15px;
+	position: relative;
+	margin-top: 10px;
+	margin-left: 5px;
+	text-decoration: none;
+	cursor: pointer;
+	position: absolute;
+}
+
+#button:link {
+	color: #ccc;
+}
+
+#button:visited {
+	color: white;
+}
+
+#button:hover {
+	color: #F4C70C;
+	background-color: #333333;
+}
+
+#button:active {
+	color: #800000;
 }
 
 /* end css form */

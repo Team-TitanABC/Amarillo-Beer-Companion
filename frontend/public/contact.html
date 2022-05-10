@@ -4,32 +4,52 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Contact page</title>
+    <title>[ABC] Contact Us</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="styles/menu.css" rel="stylesheet" type="text/css" />
     <link href="styles/contact.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <div class=t op>
-        <a href=#>home</a>
-        <a href=#> contact</a>
-        <a href=#> About</a>
-        <img src="images/ABC.png">
-    </div>
-    <div id=y ellowLine>
+    <div class="container">
+        
+    <header class="navigation">                  
+        <nav id="nav-left">
+            <a href="#" id="menu-icon"></a>
+            
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+        </nav>
+          
+        <nav id="nav-center">
+          <img src="images/ABC-Logo.png" width="100"></img>
+        </nav>
+          
+        <nav id="nav-right">
+            <ul class="nav">
+                <li><a href="search.html"><input id="nav-search" type="text" placeholder="Search Your Brew..." /></input></a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>              
+    </header>
+    
+    <main style="background-image:none;">
 
+    <div class=title>
+        <h1>Contact Us</h1>
     </div>
-    <div class=t itle>
-        <h1>Contact us </h1>
-    </div>
-    <div class=c ontent>
+    <div class=content>
         <div class="contactFormBox">
             <div class="messageBox">
                 <div class="MessageUsTitle">
                     <h1><span id="mTitle">Message Us</span></h1>
                 </div>
                 <div class="messageP">
-                    <p>If you wish to get in contact <br> please leave a detailed <br> message
-                    </p>
+                    <p>If you wish to get in contact, please complete the form below.</p>
                 </div>
             </div>
             <form id="form">
@@ -37,29 +57,29 @@
 				<label for="to_name"></label>
 				<input type="text" name="to_name" id="to_name">
 			  </div> -->
-                <h1><span id=s ubtitle>Name</span></h1>
+                <!-- <h1><span id=subtitle>Name</span></h1>
+                <h1><span id=subtitle>Name</span></h1> -->
                 <div class="fullName">
                     <div class="nameAndLast">
-
-                        <label id="labelName" for="from_name">First</label>
-                        <input type="text" name="from_name" id="from_name">
+                        <label id="labelName" for="from_name"><h2>Name</h2></label>
                     </div>
                     <div class="nameAndLast">
-                        <label id="labelName" for="from_lastName">Last</label>
-                        <input type="text" name="from_lastName" id="from_lastName">
+                        <!-- <label id="labelName" for="from_lastName"><h2></h2></label> -->
+                        <input type="text" name="from_name" id="from_name" placeholder="First" required>
+                        <input type="text" name="from_lastName" id="from_lastname" placeholder="Last">
                     </div>
                 </div>
                 <div class="userEmail">
                     <label for="reply_to"><h2>Email</h2></label>
-                    <input type="text" name="reply_to" id="reply_to">
+                    <input type="text" name="reply_to" id="reply_to" required>
                 </div>
                 <div class="message">
                     <label for="message"><h2>Comments</h2></label>
-                    <textarea id="Message" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    <textarea id="Message" name="subject" placeholder="Tell Us Your Story..." style="height:200px" required></textarea>
                     <!-- <input type="text" name="message" id="message"> -->
                 </div>
 
-                <input type="submit" id="button" value="Send Email">
+                <input type="submit" id="button" value="Submit to the Great Beyond">
             </form>
 
             <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -81,10 +101,10 @@
 
                         emailjs.sendForm(serviceID, templateID, this)
                             .then(() => {
-                                btn.value = 'Send Email';
+                                btn.value = "It's Gone!";
                                 //   alert('Sent!');
                             }, (err) => {
-                                btn.value = 'Send Email';
+                                btn.value = 'There Was An Error';
                                 alert(JSON.stringify(err));
                             });
                     });
@@ -93,18 +113,18 @@
 
         <div class="socialMedia">
             <div class="facebookLink">
-                <a href="https://www.facebook.com/AmarilloBeerCompanion">
-                    <img src="images/Layer 1.png" alt="facebook logo" target="_blank" rel="noreferrer noopener">
+                <a href="https://www.facebook.com/AmarilloBeerCompanion" target="_blank">
+                    <img src="images/contact-fb.png" alt="facebook logo" rel="noreferrer noopener">
                 </a>
             </div>
             <div class="InstragramLink">
-                <a href="https://www.instagram.com/amarillobeercompanion/?hl=en">
-                    <img src="images/Layer 5 (3).png" alt="Instragram logo" target="_blank" rel="noreferrer noopener">
+                <a href="https://www.instagram.com/amarillobeercompanion" target="_blank">
+                    <img src="images/contact-insta.png" alt="instragram logo" rel="noreferrer noopener">
                 </a>
             </div>
             <div class="gitHubLink">
-                <a href="">
-                    <img src="images/Layer 4.png" alt="gitHub logo" target="_blank" rel="noreferrer noopener">
+                <a href="#" target="_blank">
+                    <img src="images/contact-git.png" alt="gitHub logo" rel="noreferrer noopener">
                 </a>
             </div>
         </div>
@@ -130,14 +150,20 @@
 			  
 		  </div> -->
         <!-- </div> -->
-        <footer>
-            <div class=b ottomInfo>
-                <a href=#>privacy</a>
-                <a href=#>Terms of use</a>
-        </footer>
+    </main>
+        
+    <footer class="navigation">
+        <ul class="nav">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="https://www.facebook.com/AmarilloBeerCompanion" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/amarillobeercompanion" target="_blank">Instagram</a></li>
+        </ul>
+    </footer>
 
-        </div>
-        <script src="script.js"></script>
+    </div>
 </body>
+        <script src="script.js"></script>
 
 </html>
