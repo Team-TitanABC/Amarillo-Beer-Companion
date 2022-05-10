@@ -1,13 +1,25 @@
-const searchBox = document.querySelector(".search-results");
-const imageURLBase = 'https://github.com/Team-TitanABC/Amarillo-Beer-Companion/blob/main/frontend/public/images/beers/';
-let beerCards = "";
+
+const searchBox = document.querySelector(".search-results")
+const imageURLBase = 'https://github.com/Team-TitanABC/Amarillo-Beer-Companion/blob/main/frontend/public/images/beers/'
+let beerCards = ""
+
+const locationURLS = {
+	georgiastreettaphouse: 'https://g.page/georgia-street-taphouse-amarillo?share',
+	texasfirehousesports: 'https://g.page/TexasFirehouse?share',
+	thebigtexan: 'https://goo.gl/maps/MyRbD9NmXjHLAdwH6'
+}
+
 async function ButtonClicked() {
   try {
+	  console.log(locationURLS)
+
 	  beerCards = "";
     const userInput = document
       .getElementById("userInput")
       .value.split(" ")
-      .join("_");
+
+      .join("_")
+
     //console.log('userInput = ', userInput)
     const rawRes = await fetch("/search/Name/" + userInput);
     const json = await rawRes.json();
@@ -16,24 +28,32 @@ async function ButtonClicked() {
     //document.getElementById('Style').innerText = ""
     // console.log(typeof json);
 
+	const gmaps = 'https://maps.google.com'
+
+
     for (const [key, value] of Object.entries(json)) {
       console.log("name: ", value.Name);
+	  let places = '';
+	  
+	  for (const [otherkey, othervalue] of Object.entries(value.Place)) {
+		let strippedSpaces = othervalue.replace(/\s+/g, '').toLowerCase().trim()
+		console.log(strippedSpaces)
+		places += `<a href="${locationURLS[strippedSpaces] ? locationURLS[strippedSpaces] : gmaps}" target="_blank"><p class="Place">${othervalue}</p></a>`
+	  }
+
       beerCards += `
 					<div class="flip-card active">
 						<div class="flip-card-inner">
 							<div class="flip-card-front">
+								
+								<img src="${imageURLBase}${value.Images}?raw=true" class="imageElement" alt="beer" style="width:300px;height:460px;"></img>
 								<h1 class="Name">${value.Name}</h1>
-								<img href="${imageURLBase}${value.Images}?raw=true" class="imageElement" alt="beer" style="width:300px;height:300px;"></img>
-								<p class="error"></p>
 							</div>
 							<div class="flip-card-back">
-								<p class="Ingredients"></p>
-								<p class="Style"></p>
-								<p class="Place"></p>
-								<p class="Placeone"></p>
-								<p class="Placetwo"></p>
-								<p class="Placethree"></p>
-								<p class="Placefour"></p>
+								<p class="Ingredients">${value.Ingredients}</p>
+								<p class="Style">${value.Style}</p>
+								${places}
+								
 							</div>
 						</div>
 	
@@ -52,9 +72,10 @@ async function ButtonClicked() {
     // document.getElementById('Placetwo').innerText = json[0].Place[2]
     // document.getElementById('Placethree').innerText = json[0].Place[3]
     // document.getElementById('Placefour').innerText = json[0].Place[4]
-	console.log(beerCards)
-    searchBox.innerHTML = beerCards;
+	//console.log(beerCards)
+    searchBox.innerHTML = beerCards
 
+>>>>>>> googlemaps
     document.getElementsByClassName("error")[0].innerText = "";
   } catch (err) {
     console.log(err);
