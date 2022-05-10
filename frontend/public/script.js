@@ -75,7 +75,6 @@ async function ButtonClicked() {
 	//console.log(beerCards)
     searchBox.innerHTML = beerCards
 
->>>>>>> googlemaps
     document.getElementsByClassName("error")[0].innerText = "";
   } catch (err) {
     console.log(err);
