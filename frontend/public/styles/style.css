@@ -162,6 +162,7 @@ a.button:active {
     /* position: flex; */
     background-color: white;
     height: 700px;
+    display: flex;
 }
 
 
