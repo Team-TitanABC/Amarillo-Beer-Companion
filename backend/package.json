@@ -1,7 +1,35 @@
 {
-  "dependencies": {
-    "dotenv": "^16.0.0",
-    "express": "^4.18.0",
-    "mongodb": "^4.5.0"
-  }
+    "dependencies": {
+        "dotenv": "^16.0.0",
+        "express": "^4.18.0",
+        "mongodb": "^4.5.0"
+    },
+    "engines": {
+        "node": "14.x"
+    },
+    "name": "abc-express-backend",
+    "version": "1.0.0",
+    "description": "Express server/router for the ABC App",
+    "main": "index.js",
+    "devDependencies": {},
+    "scripts": {
+        "start": "node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Team-TitanABC/Amarillo-Beer-Companion.git"
+    },
+    "keywords": [
+        "beer",
+        "app",
+        "responsive",
+        "web"
+    ],
+    "author": "Team Titan",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Team-TitanABC/Amarillo-Beer-Companion/issues"
+    },
+    "homepage": "https://github.com/Team-TitanABC/Amarillo-Beer-Companion#readme"
 }
