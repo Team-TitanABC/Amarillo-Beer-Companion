@@ -9,19 +9,20 @@ const locationURLS = {
 	thebigtexan: 'https://goo.gl/maps/MyRbD9NmXjHLAdwH6'
 }
 
-async function ButtonClicked() {
+async function ButtonClicked(filter, input) {
+  
+  
+  
   try {
 	  console.log(locationURLS)
 
 	  beerCards = "";
-    const userInput = document
-      .getElementById("userInput")
-      .value.split(" ")
-
-      .join("_")
-
+    if (input==="getUserInputFromHtml") input=document.getElementById("userInput").value
+    const userInput = input.split(" ").join("_")
+     
     //console.log('userInput = ', userInput)
-    const rawRes = await fetch("/search/Name/" + userInput);
+    const url = `/search/${filter}/${userInput}/`
+    const rawRes = await fetch(url);
     const json = await rawRes.json();
     console.log("the response from the server is: ", json);
     //document.getElementById('Name').innerText = json.name
@@ -43,16 +44,22 @@ async function ButtonClicked() {
 
       beerCards += `
 					<div class="flip-card active">
+          
 						<div class="flip-card-inner">
+         
 							<div class="flip-card-front">
 								
 								<img src="${imageURLBase}${value.Images}?raw=true" class="imageElement" alt="beer" style="width:300px;height:460px;"></img>
 								<h1 class="Name">${value.Name}</h1>
 							</div>
 							<div class="flip-card-back">
+              <h2>Ingredients</h2>
 								<p class="Ingredients">${value.Ingredients}</p>
+                <h2>Style</h2>
 								<p class="Style">${value.Style}</p>
-								${places}
+            <strong> <h2>Places</h2></strong>
+                <div class="pla">   
+								${places}</div>
 								
 							</div>
 						</div>

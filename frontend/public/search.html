@@ -43,14 +43,44 @@
 
 
                 <input id="userInput" placeholder="What'll ya' have?!"></input>
-                <button class="search-button" onclick="ButtonClicked()">
+                <button class="search-button" onclick="ButtonClicked('Name','getUserInputFromHtml')">
                     <img src="images/search.png" />
                 </button>
+                
+                
+                
+                <div id="buttons">
+                    <button class="btn" onClick="ButtonClicked('Style', 'Lager')">Lager</button>
+                    <button class="btn" onClick="ButtonClicked('Style', 'Stouts')">Stouts</button>
+                    <button class="btn" onClick="ButtonClicked('Style', 'American')">American</button>
+                    <button class="btn" onClick="ButtonClicked('Style', 'Ale')">Ale</button>
+                    <button class="btn" onClick="ButtonClicked('Style', 'Pilsner')">Pilsner</button>
+                    <button class="btn" onClick="ButtonClicked('Style', 'Wheat')">Wheat</button>
+                    <button class="btn" onClick="ButtonClicked('Style', 'Amber')">Amber</button>
+                    <button class="btn" onClick="ButtonClicked('Style', 'Ipa')">Ipa</button>
+                    </div>
+                    <div id="buttons">
+                    <button class="btn" onClick="ButtonClicked('Ingredients', 'Caramel')">Caramel</button>
+                    <button class="btn" onClick="ButtonClicked('Ingredients', 'Stouts')">Stouts</button>
+                    <button class="btn" onClick="ButtonClicked('Ingredients', 'American')">American</button>
+                    <button class="btn" onClick="ButtonClicked('Ingredients', 'Ale')">Ale</button>
+                    <button class="btn" onClick="ButtonClicked('Ingredients', 'Pilsner')">Pilsner</button>
+                    <button class="btn" onClick="ButtonClicked('Ingredients', 'Wheat')">Wheat</button>
+                    <button class="btn" onClick="ButtonClicked('Ingredients', 'Amber')">Amber</button>
+                    <button class="btn" onClick="ButtonClicked('Ingredients', 'Ipa')">Ipa</button>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
 
-
+ <p class="error"></p>
             </aside>
 
             <div class="search-results">
+               
                 <!-- <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
@@ -75,7 +105,7 @@
 
                        -->
             </div>
-            <p class="error"></p>
+           
 
         </main>
 
@@ -92,6 +122,8 @@
     </div>
 
     <script src="script.js" async></script>
+    
+   
 
 </body>
 
