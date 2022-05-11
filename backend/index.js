@@ -63,7 +63,7 @@ app.get('/search.html', (req, res) => {
 })
 
 app.get('/AboutUsPage.html', (req, res) => {
-  res.sendFile(path.join(buildPath, 'AboutUsPage.html'))
+  res.sendFile(path.join(buildPath, 'about.html'))
 })
 
 app.get('/contact.html', (req, res) => {
@@ -71,7 +71,7 @@ app.get('/contact.html', (req, res) => {
 })
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(buildPath, 'idnex.html'));
+  res.sendFile(path.join(buildPath, 'index.html'));
 });
 
 app.listen(port, () => {
