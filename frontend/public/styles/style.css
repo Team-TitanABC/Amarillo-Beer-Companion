@@ -12,10 +12,15 @@ body {
     margin-left: auto;
     margin-right: auto;
     /*   position: relative; */
+
 }
 
 header {
     border-bottom: 20px solid #F4C70C;
+<<<<<<< HEAD
+=======
+
+>>>>>>> papiChulo
 }
 
 main {
@@ -33,6 +38,10 @@ main {
 footer {
     height: 16%;
     border-top: 5px solid #F4C70C;
+<<<<<<< HEAD
+=======
+
+>>>>>>> papiChulo
 }
 
 #main-div {
@@ -40,6 +49,13 @@ footer {
     /* margin-top: 125px; */
 }
 
+<<<<<<< HEAD
+=======
+#main-div img {
+  
+}
+
+>>>>>>> papiChulo
 
 /* ===== HOME PAGE TEXT BOXES ===== */
 
@@ -77,6 +93,7 @@ footer {
     width: 100%;
     padding: 75px 25px;
     padding-bottom: 0;
+<<<<<<< HEAD
 }
 
 
@@ -115,6 +132,45 @@ a.button:active {
 
 
 /* 
+=======
+}
+
+
+/* ===== BUTTON PROPERTIES ===== */
+
+.button {
+    border: 3px solid #F4C70C;
+    border-radius: 2px;
+    color: white;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    left: 25%;
+    position: relative;
+    margin-top: 175px;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+}
+
+a.button:link {
+    color: #ccc;
+}
+
+a.button:visited {
+    color: white;
+}
+
+a.button:hover {
+    color: #F4C70C;
+    background-color: #333333;
+}
+
+a.button:active {
+    color: #800000;
+}
+
+    /* 
+>>>>>>> papiChulo
     .button a:hover {
     border: 3px solid #F4C70C;
     border-radius: 2px;
@@ -126,7 +182,10 @@ a.button:active {
     margin-top: 25px;
     } */
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> papiChulo
 /* ===== SEARCH PAGE ===== */
 
 .main-search {
@@ -160,6 +219,7 @@ a.button:active {
     /* position: flex; */
     background-color: rgba(255, 255, 255, 0.1);
     height: 700px;
+<<<<<<< HEAD
     display: flex;
 }
 
@@ -192,4 +252,36 @@ a.button:active {
     background-color: #F4C70C;
     padding: 3px;
     padding-left: 5px;
+=======
+}
+
+/* ===== SEARCH BAR ===== */
+
+#userInput {
+  width: 85%;
+  margin-left: 15px;
+  margin-top: 10px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  padding: 5px;
+}
+
+.search-button {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-left: -33px;
+  margin-top: 5px;
+}
+
+.search-button img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  cursor: pointer;
+  margin-bottom: -8px;
+  background-color: #F4C70C;
+  padding: 3px;
+  padding-left: 5px;
+>>>>>>> papiChulo
 }
