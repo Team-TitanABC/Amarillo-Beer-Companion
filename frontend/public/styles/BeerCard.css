@@ -104,19 +104,39 @@
     margin-top: 70px;
 }
 .btn {
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-left: 20px;
-align-items:start;
- flex-direction: column;
- justify-content: start;
-    display: flex;
+  
 
-      border: none;
-      outline: none;
-
-      background-color: none;
-      cursor: pointer;
 
 }
+.style-col button {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    line-height: 10px;
+}
+.style-box button{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    line-height: 10px;
+}
 
+}
+#buttons {
+    display: flex;
+  
+  
+    
+}
+
+.style-box  h2{
+    text-align: left;
+    margin-left: 20px;
+    
+}
+.style-col  h2{
+    text-align: left;
+    margin-left: 20px;
+    
+}
+.style-box {
+   margin-top: 80px;
+}
