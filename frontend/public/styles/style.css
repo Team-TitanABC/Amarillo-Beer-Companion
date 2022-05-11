@@ -8,7 +8,7 @@ body {
     width: 1297px;
     height: 908px;
     min-width: 640px;
-    min-height: 1136px;
+    min-height: 100%;
     margin-left: auto;
     margin-right: auto;
     /*   position: relative; */
@@ -27,10 +27,47 @@ main {
     height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
-    width: inherit;
-    margin-top: -100px;
-    /* position: absolute; */
+    width: 100%;
+    margin-top: 0px;
+    position: relative;
 }
+
+video {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+}
+#myVideo {
+  /* position: relative; */
+  position: absolute;
+  width: inherit;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/* @media (min-aspect-ratio: 16/9) {
+  #myVideo {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  #myVideo {
+    height: 100%;
+    width: auto;
+  }
+} */
 
 footer {
     height: 16%;
@@ -41,6 +78,9 @@ footer {
 #main-div {
     width: 500px;
     /* margin-top: 125px; */
+    z-index: 2;
+    position: absolute;
+    transition: ease-in 25s;
 }
 
 #main-div img {
@@ -54,9 +94,9 @@ footer {
     /*   padding-top: 50%; */
     margin-left: 150px;
     background: rgba(0, 0, 0, 0.5);
-    position: absolute;
+    position: relative;
     width: 350px;
-    height: 150px;
+    /* height: 150px; */
     border-radius: 5px;
     z-index: 1;
     display: block;
@@ -65,7 +105,7 @@ footer {
 
 #text-main {
     /*   padding: 0  */
-    padding: 0 25px;
+    padding: 25px;
     /*   margin-left: 150px; */
     color: white;
     position: inherit;
@@ -80,10 +120,19 @@ footer {
 }
 
 .main-image img {
+    /* min-width: 10%;
+    width: 100%;
+    padding: 75px 25px;
+    padding-bottom: 0;
+    z-index: 2; */
+    
+    /* position: absolute; */
     min-width: 10%;
     width: 100%;
     padding: 75px 25px;
     padding-bottom: 0;
+    z-index: 2;
+    
 }
 
 
@@ -97,7 +146,7 @@ footer {
     padding: 15px;
     left: 25%;
     position: relative;
-    margin-top: 175px;
+    margin-top: 50px;
     text-decoration: none;
     cursor: pointer;
     position: absolute;
@@ -113,7 +162,7 @@ a.button:visited {
 
 a.button:hover {
     color: #F4C70C;
-    background-color: #333333;
+    background: rgba(51, 51, 51, 0.5);
 }
 
 a.button:active {
