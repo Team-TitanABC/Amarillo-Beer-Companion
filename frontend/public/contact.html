@@ -2,147 +2,144 @@
 <html>
 
 <head>
-    <meta charset = "utf-8">
-    <meta name = "viewport" content = "width = device-width">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width">
     <title>Contact page</title>
-    <link href = "styles/contact.css" rel = "stylesheet" type = "text/css" />
+    <link href="styles/contact.css" rel="stylesheet" type="text/css" />
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
     <link href="styles/menu.css" rel="stylesheet" type="text/css" />
 
 </head>
 
 <body>
-    <header class="navigation">                  
+    <header class="navigation">
         <nav id="nav-left">
             <a href="#" id="menu-icon"></a>
-            
+
             <ul class="nav">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-            
+
         </nav>
-          
+
         <nav id="nav-center">
-          <img src="images/ABC-Logo.png" width="100"></img>
+            <img src="images/ABC-Logo.png" width="100"></img>
         </nav>
-          
+
         <nav id="nav-right">
             <ul class="nav">
-                <li><a href="search.html"><input id="nav-search" type="text" placeholder="Search Your Brew..." /></input></a></li>
+                <li><a href="search.html"><input id="nav-search" type="text"
+                            placeholder="Search Your Brew..." /></input></a></li>
                 <li><a href="#">Login</a></li>
             </ul>
-        </nav>              
+        </nav>
     </header>
-    <div id  =  "yellowLine">
-        <!-- <p id = "demo"></p> -->
-    </div>
-    <div class  =  "title">
+
+    <div class="title">
         <h1>Contact us </h1>
     </div>
-    <div class  =  "content">
-        <div class = "contactFormBox">
-            <div class = "messageBox">
-                <div class = "MessageUsTitle">
-                    <h1><span id = "mTitle">Message Us</span></h1>
+    <div class="content">
+        <div class="contactFormBox">
+            <div class="messageBox">
+                <div class="MessageUsTitle">
+                    <h1><span id="mTitle">Message Us</span></h1>
                 </div>
-                <div class = "messageP">
+                <div class="messageP">
                     <p>If you wish to get in contact <br> please leave a detailed <br> message
                     </p>
                 </div>
             </div>
             <form id="form">
-                <!-- <div class="field">
-                  <label for="to_name"></label>
-                  <input type="text" name="to_name" id="to_name">
-                </div> -->
-                <h1><span id = subtitle>Name</span></h1>
-                <div class = "fullName">
+
+                <h1><span id=subtitle>Name</span></h1>
+                <div class="fullName">
                     <div class="nameAndLast">
-            
-                      <label id = "labelName" for="from_name">First</label>
-                      <input type="text" name="from_name" id="from_name">
+
+                        <label id="labelName" for="from_name">First</label>
+                        <input type="text" name="from_name" id="from_name">
                     </div>
                     <div class="nameAndLast">
-                        <label id = "labelName" for="from_lastName">Last</label>
+                        <label id="labelName" for="from_lastName">Last</label>
                         <input type="text" name="from_lastName" id="from_lastName">
-                      </div>
+                    </div>
                 </div>
                 <div class="userEmail">
-                  <label for="reply_to">Email</label>
-                  <input type="text" name="reply_to" id="reply_to">
+                    <label for="reply_to">Email</label>
+                    <input type="text" name="reply_to" id="reply_to">
                 </div>
                 <div class="message">
-                  <label for="message">Message</label>
-                  <input type="text" name="message" id="message">
+                    <label for="message">Message</label>
+                    <input type="text" name="message" id="message">
                 </div>
-              
-                <input type="submit" id="button" value="Send Email" >
-              </form>
-            
-              <script type="text/javascript"
-                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> 
-             
-             <script type="text/javascript">
+
+                <input type="submit" id="button" value="Send Email">
+            </form>
+
+            <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+            <script type="text/javascript">
                 emailjs.init('SOg6K0LVjIgg6idIQ')
                 const btn = document.getElementById('button');
-            
-                
-            document.getElementById('form')
-             .addEventListener('submit', function(event) {
-               event.preventDefault();
-               form.reset()
-            
-               btn.value = 'Sending...';
-            
-               const serviceID = 'service_c616rbb';
-               const templateID = 'template_ppjxdui';
-            
-               emailjs.sendForm(serviceID, templateID, this)
-                .then(() => {
-                  btn.value = 'Send Email';
-                //   alert('Sent!');
-                }, (err) => {
-                  btn.value = 'Send Email';
-                  alert(JSON.stringify(err));
-                });
-            });
+
+
+                document.getElementById('form')
+                    .addEventListener('submit', function (event) {
+                        event.preventDefault();
+                        form.reset()
+
+                        btn.value = 'Sending...';
+
+                        const serviceID = 'service_c616rbb';
+                        const templateID = 'template_ppjxdui';
+
+                        emailjs.sendForm(serviceID, templateID, this)
+                            .then(() => {
+                                btn.value = 'Send Email';
+                                //   alert('Sent!');
+                            }, (err) => {
+                                btn.value = 'Send Email';
+                                alert(JSON.stringify(err));
+                            });
+                    });
             </script>
         </div>
-            <div class = "contactInfo">
-                <div class = "address">
-                    <h1>Address</h1>
-                    <p>Amarillo Beer Companion
-                        6950 S. Arden Road
-                        Amarillo, TX 79019
-                    </p>
-                </div>
-                <div class = "phone">
-                    <h1>Phone</h1>
-                    <p>806.Companion Phone</p>
-                </div>
+        <div class="contactInfo">
+            <div class="address">
+                <h1>Address</h1>
+                <p>Amarillo Beer Companion
+                    6950 S. Arden Road
+                    Amarillo, TX 79019
+                </p>
             </div>
-      
-    </div>
-    <div class = "footer">
-        <div class = "links">
-            <div id = "start">
-                <a href  =  "#">Contact Us</a>
-            </div>
-            <div id = "middle">
-                <a href  =  "#">Privacy</a>
-                <a href  =  "#">Terms of use</a>
-            </div>
-            <div id = "end">
-                <a href  =  "#">Facebook</a>
-                <a href  =  "#">Twitter</a>
-                <a href  =  "#">Instragram</a>
+            <div class="phone">
+                <h1>Phone</h1>
+                <p>806.Companion Phone</p>
             </div>
         </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="links">
+            <div id="start">
+                <a href="#">Contact Us</a>
+            </div>
+            <div id="middle">
+                <a href="#">Privacy</a>
+                <a href="#">Terms of use</a>
+            </div>
+            <div id="end">
+                <a href="https://www.facebook.com/AmarilloBeerCompanion">Facebook</a>
+                <a href="">Twitter</a>
+                <a href="https://www.instagram.com/amarillobeercompanion/?hl=en">Instragram</a>
+            </div>
         </div>
     </div>
-        <script src = "contact.js"></script>
+    </div>
+    <script src="contact.js"></script>
 </body>
 
 </html>
