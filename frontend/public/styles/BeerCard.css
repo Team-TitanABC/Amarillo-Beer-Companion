@@ -5,7 +5,9 @@
     width: 300px;
     height: 500px;
     perspective: 1000px;
-    display: none;
+    display: flex;
+  
+  
 }
 
 .flip-card-inner {
@@ -25,7 +27,7 @@
 .flip-card-front,
 .flip-card-back {
    
-
+   
     border-radius: 20px;
     position: absolute;
     width: 100%;
@@ -81,6 +83,7 @@
 
 .active {
     display: block;
+   
 }
 
 .Name {
@@ -122,21 +125,36 @@
 }
 #buttons {
     display: flex;
+   
   
   
     
+}
+.btn {
+   background:none;
+   font-size: 18px;
+   border: none;
+   color: #F4C70C;
 }
 
 .style-box  h2{
+   line-height: 27px;
+   width:370px;
     text-align: left;
     margin-left: 20px;
+    border-bottom: 2px solid #F4C70C ;
     
 }
 .style-col  h2{
+   line-height: 27px;
+   width:370px;
     text-align: left;
     margin-left: 20px;
+    border-bottom: 2px solid #F4C70C ;
+  
     
 }
 .style-box {
    margin-top: 80px;
+   
 }
