@@ -5,7 +5,9 @@
     width: 300px;
     height: 500px;
     perspective: 1000px;
-    display: none;
+    display: flex;
+  
+  
 }
 
 .flip-card-inner {
@@ -25,7 +27,7 @@
 .flip-card-front,
 .flip-card-back {
    
-
+   
     border-radius: 20px;
     position: absolute;
     width: 100%;
@@ -81,6 +83,7 @@
 
 .active {
     display: block;
+   
 }
 
 .Name {
@@ -104,19 +107,54 @@
     margin-top: 70px;
 }
 .btn {
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-left: 20px;
-align-items:start;
- flex-direction: column;
- justify-content: start;
-    display: flex;
+  
 
-      border: none;
-      outline: none;
-
-      background-color: none;
-      cursor: pointer;
 
 }
+.style-col button {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    line-height: 10px;
+}
+.style-box button{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    line-height: 10px;
+}
 
+}
+#buttons {
+    display: flex;
+   
+  
+  
+    
+}
+.btn {
+   background:none;
+   font-size: 18px;
+   border: none;
+   color: #F4C70C;
+}
+
+.style-box  h2{
+   line-height: 27px;
+   width:370px;
+    text-align: left;
+    margin-left: 20px;
+    border-bottom: 2px solid #F4C70C ;
+    
+}
+.style-col  h2{
+   line-height: 27px;
+   width:370px;
+    text-align: left;
+    margin-left: 20px;
+    border-bottom: 2px solid #F4C70C ;
+  
+    
+}
+.style-box {
+   margin-top: 80px;
+   
+}
