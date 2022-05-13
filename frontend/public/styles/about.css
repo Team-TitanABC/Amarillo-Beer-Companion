@@ -11,7 +11,6 @@ h1 {
     font-size: 40px;
     /* width: 211px; */
     color: #F4C70C;
-    border-bottom: 1px solid #F4C70C;
 }
 
 p {
@@ -20,76 +19,16 @@ p {
     margin-bottom: 20px;
 }
 
-.top {
-    height: 137px;
+.container2 {
+display: flex; 
+gap: 50px;
+
 }
 
-.info {
+.davidP {
     display: flex;
-    height: 641px;
-}
-
-
-/* img {
-    z-index: -1;
-    position: absolute;
-    justify-items: auto;
-} */
-
-.about {
-    width: 1000px;
-    /* border: 2px dotted red; */
-}
-
-.about>h1 {
-    width: 299px;
-}
-
-.about>p {
-    font-size: 18px;
-}
-
-#who {
-    font-weight: 700;
-    font-size: 25px;
-}
-
-#what {
-    font-weight: 700;
-    font-size: 25px;
-}
-
-#where {
-    font-weight: 700;
-    font-size: 25px;
-}
-
-#when {
-    font-weight: 700;
-    font-size: 25px;
-}
-
-#Why {
-    font-weight: 700;
-    font-size: 25px;
-}
-
-#experience {
-    margin-right: 56px;
-}
-
-
-/* #skills > h1 {
-    width: 211px;
-}
-/*  */
-
-#tools>h1 {
-    width: 211px;
-}
-
-#tools>p {
-    font-size: 18px;
+    flex-direction: column;
+   justify-content: flex-end;
 }
 
 .aboutUsright {
