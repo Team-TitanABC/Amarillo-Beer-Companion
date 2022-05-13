@@ -20,7 +20,6 @@ p {
 }
 
 .container2 {
-<<<<<<< HEAD
 
     display: flex;
     gap: 130px;
@@ -101,17 +100,6 @@ p {
     display: flex;
     flex-direction: column;
     text-align: start;
-=======
-display: flex; 
-gap: 50px;
-
-}
-
-.davidP {
-    display: flex;
-    flex-direction: column;
-   justify-content: flex-end;
->>>>>>> aae4500b8b2019526236edaa3393282b1443ce91
 }
 
 .aboutUsright {
