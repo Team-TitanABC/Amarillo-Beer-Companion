@@ -49,7 +49,7 @@ async function ButtonClicked(filter, input) {
          
 							<div class="flip-card-front">
 								
-								<img src="${imageURLBase}${value.Images}?raw=true" class="imageElement" alt="beer" style="width:300px;height:460px;"></img>
+								<img src="${imageURLBase}${value.Images}?raw=true" class="imageElement" alt="beer"></img>
 								<h1 class="Name">${value.Name}</h1>
 							</div>
 							<div class="flip-card-back">
