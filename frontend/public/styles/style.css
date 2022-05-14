@@ -79,42 +79,68 @@ footer {
     /* margin-top: 125px; */
     z-index: 2;
     position: absolute;
-    transition: ease-in 25s;
+    /* transition: ease-in 25s; */
+    /* opacity: 0%;
+
+    transition-property: opacity, transform;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0s; */
 }
 
 #main-div img {
   
 }
 
+/* ===== LOGO-TEXT ANIMATION DELAY ===== */
+/* .delay {
+  animation: 24s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+} */
+
 /* ===== HOME PAGE TEXT BOXES ===== */
 
 .text-main {
-    /*   padding-top: 50%; */
     margin-left: 150px;
     background: rgba(0, 0, 0, 0.5);
     position: relative;
     width: 350px;
-    /* height: 150px; */
     border-radius: 5px;
     z-index: 1;
     display: block;
     transform: translate(-15%, 50%)
+    /*   padding-top: 50%; */
+    /*   height: 150px; */
 }
 
 #text-main {
-    /*   padding: 0  */
-    padding: 25px;
-    /*   margin-left: 150px; */
+    padding: 15px 25px;
     color: white;
     position: inherit;
+    z-index: 1;
+    /*   padding: 0  */
+    /*   margin-left: 150px; */
     /*   top: 225%; 
   left: 50%; */
-    z-index: 1;
 }
 
 .main-image {
     width: 60%;
-    margin: 100px auto -50px;
+    margin: 30px auto -75px;
 }
 
 .main-image img {
@@ -142,7 +168,7 @@ footer {
     padding: 15px;
     left: 25%;
     position: relative;
-    margin-top: 175px;
+    margin-top: 40px;
     text-decoration: none;
     cursor: pointer;
     position: absolute;
@@ -158,42 +184,7 @@ a.button:visited {
 
 a.button:hover {
     color: #F4C70C;
-    background-color: #333333;
-}
-
-a.button:active {
-    color: #800000;
-}
-
-
-
-/* ===== BUTTON PROPERTIES ===== */
-
-.button {
-    border: 3px solid #F4C70C;
-    border-radius: 2px;
-    color: white;
-    background: rgba(0, 0, 0, 0.25);
-    padding: 15px;
-    left: 25%;
-    position: relative;
-    margin-top: 50px;
-    text-decoration: none;
-    cursor: pointer;
-    position: absolute;
-}
-
-a.button:link {
-    color: #ccc;
-}
-
-a.button:visited {
-    color: white;
-}
-
-a.button:hover {
-    color: #F4C70C;
-    background: rgba(51, 51, 51, 0.5);
+    background-color: rgba(33, 33, 33, 0.65)
 }
 
 a.button:active {
