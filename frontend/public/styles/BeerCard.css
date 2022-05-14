@@ -71,7 +71,8 @@
 .imageElement {
     object-fit: contain;
     width: 100%;
-    max-height: 460px;
+    height: 460px;
+    min-height: 260px;
 }
 
 .active {
@@ -116,6 +117,7 @@
 
 #buttons {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .btn {
