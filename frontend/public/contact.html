@@ -12,13 +12,17 @@
 </head>
 
 <body>
-<div class = container>
+<div class = "container">
 
 
 
-    <header class="navigation">                  
-        <nav id="nav-left">
-            <a href="#" id="menu-icon"></a>
+    <header class="navigation respGrid">                  
+        <nav id="nav-left" class=menuToggle>
+            
+            <input name="toggle" type="checkbox" />
+            <label for=toggle">
+                <a href="#" id="menu-icon"></a>
+            </label>
             
             <ul class="nav">
               <li><a href="index.html">Home</a></li>
@@ -39,7 +43,7 @@
             <div>
             <ul class="nav">
                 <!-- <li><a href="search.html"><input id="nav-search" type="text" placeholder="Search Your Brew..." /></input></a></li> -->
-    
+
                 <li><a href="#">Login</a></li>
             </ul>
             <div>
@@ -135,20 +139,30 @@
     <div class="footer">
         <div class="links">
             <div id="start">
-                <a href="#">Contact Us</a>
+                <span class = "text"><a href="#">Contact Us</a></span>
+                <span class = "icon"><img src = "images/Contact Us.png"></span>
+                <!-- <a href="#">Contact Us</a> -->
             </div>
             <div id="middle">
                 <a href="#">Privacy</a>
-                <a href="#">Terms of use</a>
+                <span class = "normal"><a href="#">Terms of use</a></span>
+                <span class = "reduce"><a href = "#">Terms</a></span>
+                <!-- <a href="#">Terms of use</a> -->
             </div>
             <div id="end">
-                <a href="https://www.facebook.com/AmarilloBeerCompanion">Facebook</a>
-                <a href="">Twitter</a>
-                <a href="https://www.instagram.com/amarillobeercompanion/?hl=en">Instragram</a>
+                <span class = "text"><a href="https://www.facebook.com/AmarilloBeerCompanion">Facebook</a></span>
+                <a href="https://www.facebook.com/AmarilloBeerCompanion"><span class = "icon"><img src = "images/facebook (1).png"></span></a>
+                <!-- <a href="https://www.facebook.com/AmarilloBeerCompanion">Facebook</a> -->
+                <span class = "text"><a href="#">Twitter</a></span>
+                <a href = "#"><span class = "icon"><img src = "images/twitter.png"></span></a>
+                <!-- <a href="">Twitter</a> -->
+                <span class = "text"><a href="https://www.instagram.com/amarillobeercompanion/?hl=en">Instagram </a></span>
+                <a href="https://www.instagram.com/amarillobeercompanion/?hl=en"><span class = "icon"><img src = "images/instagram.png"></span></a>
+                <!-- <a href="https://www.instagram.com/amarillobeercompanion/?hl=en">Instagram </a> -->
             </div>
         </div>
     </div>
-    </div>
+</div>
 </div>
     <script src="contact.js"></script>
 
