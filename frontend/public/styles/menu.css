@@ -7,13 +7,9 @@
     position: relative;
 }
 
-/* .navigation ul,
-.navigation ul.nav {
-    margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: 0px;
-} */
+.nav {
+margin: auto;
+}
 
 .navigation ul li,
 .navigation ul.nav li {
@@ -40,13 +36,8 @@
     align-items: center;
     text-decoration: none;
     transition: all 400ms ease-in-out 100ms;
-    -webkit-transition: all 400ms ease-in-out 100ms;
-    -o-transition: all 400ms ease-in-out 100ms;
-}
-
-.navigation a:hover {
-    background-color: #939393;
-    
+        -webkit-transition: all 400ms ease-in-out 100ms;
+        -o-transition: all 400ms ease-in-out 100ms;
 }
 
 .navigation ul li a:hover,
@@ -54,29 +45,17 @@
     background-color: #333333;
     border-radius: 4px;
     color: #F4C70C;
-    color: red;
     
-    align-self: center;
-    align-content: center;
-    align-items: center;
-    box-align: center;
-    justify-content: center;
-    justify-items: center;
-    justify-self: center;
-    
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
-#menu-icon {
+
+#menu-icon, .menuToggle input {
     display: none;
-    width: 40px;
-    height: 40px;
-    /* background: #660000 url("../Images/Icons/menu-icon.png") right; */
 }
 
-#menu-icon a:hover {
-    background-color: #333333;
-    border-radius: 4px;
-}
 
 /* ===== MENU ALIGNMENT ===== */
 header {
@@ -86,30 +65,20 @@ header {
 }
 
 #nav-left {
-  /* justify-content: flex-start; */
-  /* justify-self: flex-start;
-  flex: 1; */
-  flex: 1; 
   display: flex;
+  flex: 1; 
   justify-content: start;
 }
 
 #nav-center {
-  /* align-content: center; */
-  /* justify-self: center;
-  flex: 1; */
   display: flex;
   flex: 1; 
   justify-content: center;
 }
 
 #nav-right {
-  /* align-content: flex-end; */
-  /* justify-self: flex-end;
-  flex: 1; */
-  flex: 1; 
-
   display: flex;
+  flex: 1; 
   align-items: center;
   justify-content: end;
 }
@@ -117,33 +86,190 @@ header {
 #nav-search ul li a:hover {
     background-color: none;
     background: transparent;
-    
 }
 
 #search-menu-icon {
   width: 25px;
   height: 25px;
-  /* background: url(../images/search-menu.png); */
-  /* padding-top: -25px; */
-  /* position: absolute; */
-  /* transform: translateY(-30%); */
-  
+  background: url(../images/search-menu.png);
+  padding-top: -25px;
+  position: absolute;
+  transform: translateY(-50%);
 }
 
 
-/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
-/* @media screen and (max-width: 600px) {
-  .topnav a, .topnav input[type=text] {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type=text] {
-    border: 1px solid #ccc;
-  }
-} */
+    @media screen and (max-width: 640px), (pointer:coarse), (hover:none), (hover:on-demand) {
+       
+      /* ===== MENU TOGGLE ===== */
+      .menuToggle {
+        display: block;
+        position: relative;
+        top: 0px;
+        left: 0px;  
+        z-index: 1;  
+        -webkit-user-select: none;
+        -moz-user-select: none;
+         -ms-user-select: none;
+             user-select: none;
+      }
 
+      .menuToggle li,
+      .menuToggle ul.nav li {
+        text-decoration: none;
+        color: #F4C70C;
+          -webkit-transition: color 0.3s ease;
+          -o-transition: color 0.3s ease;
+          transition: color 0.3s ease;
+        display: block;
+        text-indent: 75px;
+      }
+      
+      .menuToggle li:hover {
+        color: white;
+      }
+      
+      /* The menu button hidden inside an input element */
+      .menuToggle input {
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: -7px;
+        left: -5px;  
+        padding: 0;
+        cursor: pointer;  
+        opacity: 0; /* hide this */
+        z-index: 2; /* and place it over the menu-icon */  
+          -webkit-touch-callout: none;
+      }
+      
+      .menuToggle label {
+        position: relative;
+        display: block;
+        width: 50px;
+        height: 50px;
+      }
+      
+      /* Menu Icon */
+      #menu-icon {
+        display: block;        
+        width: 50px;
+        height: 50px;
+        background: url("../images/menu-icon.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        z-index: 1;  
+        -webkit-transform-origin: 4px 0px;  
+            -ms-transform-origin: 4px 0px;  
+                transform-origin: 4px 0px;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      }
+      
+      #menu-icon:first-child {
+        -webkit-transform-origin: 0% 100%;
+            -ms-transform-origin: 0% 100%;
+                transform-origin: 0% 100%;
+      }
+      
+      #menu-icon:nth-child(2) {
+          -webkit-transform-origin: 0% 0%;
+            -ms-transform-origin: 0% 0%;
+                transform-origin: 0% 0%;
+      }
+      
+      /* Use absolute positioning to place the menu off-screen */
+      .nav {
+        position: absolute;
+        width: min-content;
+        height: min-content;
+        margin: -75px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+        /* background: #333333; */
+        background: rgba(33, 33, 33, .90);
+        border-radius: 10px;
 
+        list-style-type: none;
+        /* Hide the menu off-screen to the left */
+        left: -300%;
+          -webkit-transition: left 0.3s ease;
+          -o-transition: left 0.3s ease;
+        transition: left 0.3s ease; 
+      }
+      
+      .nav li {
+        padding: 10px 0;
+        font-size: inherit;
+      }
+      
+      .navigation ul.nav li a:hover {
+        background-color: #F4C70C;
+        color: black;
+      }
+      
+      /* Slide the menu in from left when the input is checked */
+      .menuToggle input:checked ~ ul {
+        left: 0;
+      }
+        
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* ===== MENU ALIGNMENT ===== */
+ /* header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ } */
+ 
+ /* #nav-left {
+   display: flex;
+   flex: 1; 
+   justify-content: start;
+ } */
+ 
+ #nav-center {
+   display: inline-flex;
+   flex: -1; 
+   justify-content: center;
+ }
+ 
+ /* #nav-right {
+   display: flex;
+   flex: 1; 
+   align-items: center;
+   justify-content: end;
+ } */
+ 
+ /* #nav-search ul li a:hover {
+    background-color: none;
+    background: transparent;
+ } */
+ 
+ #search-menu-icon {
+   width: 25px;
+   height: 25px;
+   background: url(../images/search-menu.png);
+   padding-top: -25px;
+   position: relative;
+   float: left;
+   transform: translateY(-50%);
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+  }

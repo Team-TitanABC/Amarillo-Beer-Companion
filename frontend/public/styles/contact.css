@@ -25,15 +25,6 @@ h1, h2, h3 {
 	height: 130px;
 }
 
-<<<<<<< HEAD
-=======
-#yellowLine {
-	
-	height: 23px;
-	background-color: #f4c70c
-}
-
->>>>>>> papiChulo
 
 .title, h1{
 	text-align: center;
@@ -157,7 +148,7 @@ label {
 	margin-left: 5px;
 	text-decoration: none;
 	cursor: pointer;
-	position: absolute;
+	position: relative;
 }
 
 #button:link {
@@ -181,11 +172,10 @@ label {
 
 
 
-img {
-	margin-right: 20px;
-	width: 75px;
-	height: 75px;
-}
+<<<<<<< HEAD
+=======
+
+>>>>>>> aae4500b8b2019526236edaa3393282b1443ce91
 
 .contactInfo {
 
@@ -212,8 +202,7 @@ text-decoration: none;
 .footer {
 	width: 100%;
 	border-top: 5px solid #f4c70c;
-	
-	position:absolute;
+	position:relative;
 	bottom:10px;
 
 }
@@ -283,8 +272,8 @@ margin-left:45px;
 	.footer {
 		width: 100%;
 		border-top: 5px solid #f4c70c;
-		position:absolute;
-		top:900px;
+		position:relative;
+		top: 50px;
 	}
 
 	
@@ -318,8 +307,8 @@ margin-left:45px;
 	.footer {
 		width: 100%;
 		border-top: 5px solid #f4c70c;
-		position:absolute;
-		top:900px;
+		position:relative;
+		top:100px;
 	}
 
 	
@@ -353,8 +342,8 @@ margin-left:45px;
 	.footer {
 		width: 100%;
 		border-top: 5px solid #f4c70c;
-		position:absolute;
-		top:900px;
+		position:relative;
+		top: 50px;
 	}
 
 	
@@ -388,8 +377,8 @@ margin-left:45px;
 	.footer {
 		width: 100%;
 		border-top: 5px solid #f4c70c;
-		position:absolute;
-		top:900px;
+		position:relative;
+		top: 50px;
 	}
 
 	
