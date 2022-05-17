@@ -16,11 +16,15 @@ h3 {
 	color: white;
 }
 
+.main-contact {
+	margin-bottom: 50px;
+	height: auto;
+}
 
 .contactFormBox {
 	display: flex;
 	flex-direction: column;
-
+	margin-left: 75px;
 }
 
 .top {
@@ -186,8 +190,20 @@ label {
 
 
 .address {
-
+	max-width: 300px;
+	width: 250px;
 	margin-right: 150px;
+}
+.address h1 {
+	text-align: start;
+}
+
+.phone {
+	max-width: 300px;
+	width: 250px;
+}
+.phone h1 {
+	text-align: start;
 }
 
 a {
@@ -195,51 +211,9 @@ a {
 	text-decoration: none;
 }
 
-.footer {
-	width: 100%;
-	border-top: 5px solid #f4c70c;
-	position: relative;
-	bottom: 10px;
-	margin-top: 20px;
-}
-
-.links {
-	width:100%;
-	flex: 1;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	height: 60px;
-
-
-}
-
-
-#middle>a {
-	margin-left: 35px;
-
-}
 
 
 
-@media (min-width: 501px) {
-	span.icon {
-		display: none;
-	}
-
-	span.text {
-		display: inline-block;
-	}
-
-	span.normal {
-		display: inline-block;
-	}
-
-	span.reduce {
-		display: none;
-}
-
-}
 
 @media (max-width: 640px) {
 	.content {
@@ -247,8 +221,6 @@ a {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
-
-
 
 	.contactInfo {
 
@@ -269,83 +241,15 @@ a {
 		margin-right: 0;
 	}
 
-	.footer {
-		width: 100%;
-		border-top: 5px solid #f4c70c;
-		position: relative;
-		top: 50px;
-	}
-
-
-	.links {
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		height: 60px;
-	}
 }
 
 
 @media (max-width: 540px) {
 
-	span.icon {
-		display: inline-block;
-	}
-
-	.icon>img {
-	min-width: 30px;	
-	}
-
-	span.text {
-		display: none;
-	}
-
-	span.normal {
-		display: none;
-	}
-
-	span.reduce {
-		display: inline-block;
-	}
-
-
-
 	.content {
 		display: flex;
 		flex-wrap: wrap;
 
-	}
-
-	.footer {
-		width: 100%;
-		border-top: 5px solid #f4c70c;
-		position: relative;
-		top: 50px;
-	}
-
-
-	.links {
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		height: 60px;
-	}
-
-	#middle {
-		display: flex;
-		/* border: 2px dotted yellow; */
-	}
-
-	#middle>a {
-		display: flex;
-		justify-content: center;
-		margin-right: 20px;
-	}
-	
-	#end {
-		display: flex;
-	
-		gap:10px;
 	}
 	
 

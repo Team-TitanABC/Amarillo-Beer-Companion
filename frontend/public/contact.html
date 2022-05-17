@@ -49,118 +49,123 @@
         </nav>              
     </header>
 
-    <div class="title">
-        <h1>Contact Us </h1>
-    </div>
-    <div class="content">
-        <div class="contactFormBox">
-            <div class="messageBox">
-                <div class="MessageUsTitle">
-                    <h1><span id="mTitle">Message Us</span></h1>
-                </div>
-                <div class="messageP">
-                    <p>If you wish to get in contact, please complete the form below.</p>
-                </div>
-            </div>
-            <form id="form">
-                <h1><span id=subtitle>Name</span></h1>
-
-                <div class="fullName">
-                    <div class="nameAndLast">
-                        <label id="labelName" for="from_name"><h2>Name</h2></label>
+    <main class="main-contact" style="background-image:none;">
+        <div class="title">
+            <h1>Contact Us </h1>
+        </div>
+        <div class="content">
+            <div class="contactFormBox">
+                <div class="messageBox">
+                    <div class="MessageUsTitle">
+                        <h1><span id="mTitle">Message Us</span></h1>
                     </div>
-                    <div class="nameAndLast">
-                        <!-- <label id="labelName" for="from_lastName"><h2></h2></label> -->
-                        <input type="text" name="from_name" id="from_name" placeholder="First" required>
-                        <input type="text" name="from_lastName" id="from_lastname" placeholder="Last">
+                    <div class="messageP">
+                        <p>If you wish to get in contact, please complete the form below.</p>
                     </div>
                 </div>
-                <div class="userEmail">
-
-                    <label for="reply_to">Email</label>
-                    <input type="text" name="reply_to" id="reply_to">
-                </div>
-                <div class="message">
-                    <label for="message">Message</label>
-                    <input type="text" name="message" id="message">
-
-                </div>
-
-                <input type="submit" id="button" value="Submit to the Great Beyond">
-            </form>
-
-            <script type="text/javascript"
-                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-            <script type="text/javascript">
-                emailjs.init('SOg6K0LVjIgg6idIQ')
-                const btn = document.getElementById('button');
-
-
-                document.getElementById('form')
-                    .addEventListener('submit', function (event) {
-                        event.preventDefault();
-                        form.reset()
-
-                        btn.value = 'Sending...';
-
-                        const serviceID = 'service_c616rbb';
-                        const templateID = 'template_ppjxdui';
-
-                        emailjs.sendForm(serviceID, templateID, this)
-                            .then(() => {
-                                btn.value = "It's Gone!";
-                                //   alert('Sent!');
-                            }, (err) => {
-                                btn.value = 'There Was An Error';
-                                alert(JSON.stringify(err));
-                            });
-                    });
-            </script>
-        </div>
-
-        <div class="contactInfo">
-            <div class="address">
-                <h1>Address</h1>
-                <p>Amarillo Beer Companion
-                    6950 S. Arden Road
-                    Amarillo, TX 79019
-                </p>
+                <form id="form">
+                    <h1><span id=subtitle>Name</span></h1>
+    
+                    <div class="fullName">
+                        <div class="nameAndLast">
+                            <label id="labelName" for="from_name"><h2>Name</h2></label>
+                        </div>
+                        <div class="nameAndLast">
+                            <!-- <label id="labelName" for="from_lastName"><h2></h2></label> -->
+                            <input type="text" name="from_name" id="from_name" placeholder="First" required>
+                            <input type="text" name="from_lastName" id="from_lastname" placeholder="Last">
+                        </div>
+                    </div>
+                    <div class="userEmail">
+    
+                        <label for="reply_to">Email</label>
+                        <input type="text" name="reply_to" id="reply_to">
+                    </div>
+                    <div class="message">
+                        <label for="message">Message</label>
+                        <input type="text" name="message" id="message">
+    
+                    </div>
+    
+                    <input type="submit" id="button" value="Submit to the Great Beyond">
+                </form>
+    
+                <script type="text/javascript"
+                    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+                <script type="text/javascript">
+                    emailjs.init('SOg6K0LVjIgg6idIQ')
+                    const btn = document.getElementById('button');
+    
+    
+                    document.getElementById('form')
+                        .addEventListener('submit', function (event) {
+                            event.preventDefault();
+                            form.reset()
+    
+                            btn.value = 'Sending...';
+    
+                            const serviceID = 'service_c616rbb';
+                            const templateID = 'template_ppjxdui';
+    
+                            emailjs.sendForm(serviceID, templateID, this)
+                                .then(() => {
+                                    btn.value = "It's Gone!";
+                                    //   alert('Sent!');
+                                }, (err) => {
+                                    btn.value = 'There Was An Error';
+                                    alert(JSON.stringify(err));
+                                });
+                        });
+                </script>
             </div>
-            <div class="phone">
-                <h1>Phone</h1>
-                <p>806.Companion-Phone</p>
+    
+            <div class="contactInfo">
+                <div class="address">
+                    <h1>Address</h1>
+                    <p>Amarillo Beer Companion</p>
+                    <p>6950 S. Arden Road</p>
+                    <p>Amarillo, TX 79019</p>
+                </div>
+                <div class="phone">
+                    <h1>Phone</h1>
+                    <p>806.Companion-Phone</p>
+                </div>
             </div>
+    
         </div>
-
-    </div>
-
+    </main>
+    
     <div class="footer">
         <div class="links">
             <div id="start">
-                <span class = "text"><a href="#">Contact Us</a></span>
-                <span class = "icon"><img src = "images/Contact Us.png"></span>
-                <!-- <a href="#">Contact Us</a> -->
+                <span class="text"> <a href="contact.html">Contact Us</a> </span>
+                <span class="icon"> <a href="contact.html"> <img src="images/Contact Us.png" /> </a> </span>
             </div>
+            
             <div id="middle">
                 <a href="#">Privacy</a>
-                <span class = "normal"><a href="#">Terms of Use</a></span>
-                <span class = "reduce"><a href = "#">Terms</a></span>
-                <!-- <a href="#">Terms of use</a> -->
+                <span class="normal"> <a href="#">Terms of Use</a> </span>
+                <span class="reduce"> <a href="#">Terms</a> </span>
             </div>
+            
             <div id="end">
-                <span class = "text"><a href="https://www.facebook.com/AmarilloBeerCompanion">Facebook</a></span>
-                <a href="https://www.facebook.com/AmarilloBeerCompanion"><span class = "icon"><img src = "images/facebook (1).png"></span></a>
-                <!-- <a href="https://www.facebook.com/AmarilloBeerCompanion">Facebook</a> -->
-                <span class = "text"><a href="#">Twitter</a></span>
-                <a href = "#"><span class = "icon"><img src = "images/twitter.png"></span></a>
-                <!-- <a href="">Twitter</a> -->
-                <span class = "text"><a href="https://www.instagram.com/amarillobeercompanion/?hl=en">Instagram </a></span>
-                <a href="https://www.instagram.com/amarillobeercompanion/?hl=en"><span class = "icon"><img src = "images/instagram.png"></span></a>
-                <!-- <a href="https://www.instagram.com/amarillobeercompanion/?hl=en">Instagram </a> -->
+                <span class="text"> <a href="https://www.facebook.com/AmarilloBeerCompanion" target=”_blank”>Facebook</a> </span>
+                <span class="icon"> <a href="https://www.facebook.com/AmarilloBeerCompanion" target=”_blank”> <img src="images/facebook.png" /> </a> </span>
+                    
+                    
+                <span class="text"> <a href="#" target=”_blank”>Twitter</a> </span>
+                <span class="icon"> <a href = "#" target=”_blank”> <img src = "images/twitter.png" /> </a> </span>
+                
+                
+                <span class="text"> <a href="https://www.instagram.com/amarillobeercompanion" target=”_blank”>Instagram</a> </span>
+                <span class="icon"> <a href="https://www.instagram.com/amarillobeercompanion" target=”_blank”>  <img src="images/instagram.png" /> </a> </span>
+                
             </div>
         </div>
     </div>
+    
+    
 </div>
 </div>
     <script src="contact.js"></script>

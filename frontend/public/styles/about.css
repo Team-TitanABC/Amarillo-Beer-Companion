@@ -20,24 +20,11 @@ p {
 }
 
 .container2 {
-
     display: flex;
-    gap: 130px;
-
-
+    gap: 131px;
 }
 
-.davidP {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: rgb(27, 24, 24);
-
-}
-
-.gerardoP {
+.profiles {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,58 +32,11 @@ p {
     background-color: rgb(27, 24, 24);
 }
 
-.israelP {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: rgb(27, 24, 24);
-}
-
-.orlandoP {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(27, 24, 24);
-
-}
-
-.orlandoP>h2 {
+.profiles>h2 {
     color: #F4C70C;
 }
 
-.israelP>h2 {
-    color: #F4C70C;
-}
-
-.davidP>h2 {
-    color: #F4C70C;
-}
-
-.gerardoP>h2 {
-    color: #F4C70C;
-}
-
-.oEducationList {
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-}
-
-.dEducationList {
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-}
-
-.iEducationList {
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-}
-
-.gEducationList {
+.EducationList {
     display: flex;
     flex-direction: column;
     text-align: start;
@@ -134,81 +74,26 @@ p {
     z-index: 14;
 }
 
-
-
-
 .bottomLine {
     background-color: #F4C70C;
     height: 6px;
 }
-/* ----------------------Footer----------------- */
-a {
-    color:#f4c70c;
-    text-decoration: none;
-    }
-    
-    .footer {
-        width: 100%;
-        border-top: 5px solid #f4c70c;
-        position:relative;
-        bottom:10px;
-    
-    }
-    
-    .links {
-        width: 100%;
-        display: flex;
-        flex: 1;
-        justify-content: space-around;
-        align-items: center;
-        height: 60px;
-    
-    
-    }
-    
-    
-    #middle>a {
-    margin-left:35px;
-    
-    }
-    
-    #end>a {
-    margin-left:45px;
-    
-    }
-    
-	ul {
-		list-style: none;
-	}
+
+
+
 @media (max-width:640px) {
-.container2 {
-display: flex;
-flex-wrap: wrap;
-}
+  .container2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
 
-.oEducationList {
+  .EducationList {
     display: flex;
     flex-direction: column;
     text-align: center;
-}
+  }
 
-.dEducationList {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.iEducationList {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.gEducationList {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
 
 /* body {
 	background: black;
@@ -218,14 +103,12 @@ flex-wrap: wrap;
 	height: 896px;
   } */
 
-  p {
+p {
 	color: white;
 }
 
-h1,
-h2,
 h3 {
-	color: white;
+  color: gray;
 }
 
 
@@ -244,7 +127,6 @@ h3 {
 /* end css form */
 
 .contactInfo {
-
 	display: flex;
 	justify-content: space-between;
 	position: relative;
@@ -254,9 +136,7 @@ h3 {
 }
 
 
-
 .address {
-
 	margin-right: 150px;
 }
 
@@ -265,41 +145,6 @@ a {
 	text-decoration: none;
 }
 
-.links {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	height: 60px;
-
-
-}
-
-
-#middle>a {
-	margin-left: 35px;
-
-}
-
-
-
-@media (min-width: 501px) {
-	span.icon {
-		display: none;
-	}
-
-	span.text {
-		display: inline-block;
-	}
-
-	span.normal {
-		display: inline-block;
-	}
-
-	span.reduce {
-		display: none;
-}
-
-}
 
 @media (max-width: 640px) {
 	.content {
@@ -329,38 +174,10 @@ a {
 		margin-right: 0;
 	}
 
-	.links {
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		height: 60px;
-	}
 }
 
 
 @media (max-width: 540px) {
-
-	span.icon {
-		display: inline-block;
-	}
-
-	.icon>img {
-	min-width: 30px;	
-	}
-
-	span.text {
-		display: none;
-	}
-
-	span.normal {
-		display: none;
-	}
-
-	span.reduce {
-		display: inline-block;
-	}
-
-
 
 	.content {
 		display: flex;
@@ -368,35 +185,6 @@ a {
 
 	}
 
-	.links {
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		height: 60px;
-	}
-
-	#middle {
-		display: flex;
-		/* border: 2px dotted yellow; */
-	}
-
-	#middle>a {
-		display: flex;
-		justify-content: center;
-		margin-right: 20px;
-	}
-	
-	#end {
-		display: flex;
-	
-		gap:10px;
-	}
-	
 
 
 }
-    
-
-
-
-     

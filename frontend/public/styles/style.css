@@ -209,11 +209,11 @@ a.button:active {
       transform: translateX(-12%);
   }
 
-/* ------------------ Footer------------------- */ 
+/* ===== FOOTER ===== */ 
   a {
     color:#f4c70c;
     text-decoration: none;
-    }
+  }
     
     .footer {
         width: 100%;
@@ -223,6 +223,15 @@ a.button:active {
         height: min-content;
     }
     
+    .text {
+      /* display: flex; */
+      /* align-items: flex-start;
+      justify-content: center; */
+      /* height: 60px; */
+      padding: 25px;
+      vertical-align: bottom;
+    }
+    
     .links {
         display: flex;
         justify-content: space-around;
@@ -230,8 +239,11 @@ a.button:active {
         height: 60px;
     }
     
+    
     #middle>a {
       margin-left:35px;
+      padding: 25px;
+
     }
     
     #end>a {
@@ -267,6 +279,7 @@ a.button:active {
     
     main {
       width: 100%;
+      
     }
     
     #main-div {
@@ -362,156 +375,75 @@ a.button:active {
         /* height: min-content; */
         /* height: max-content; */
     }
+}
 
-
-    /* === Responsive Footer === */
-    .contactInfo {
-    
-      display: flex;
-      justify-content: space-between;
-      position: relative;
-      right: 550px;
-      padding-right: 150px;
-      margin-left: 675px;
-    }
-    
-    a {
-      color: #f4c70c;
-      text-decoration: none;
-    }
-    
-    .footer {
-      width: 100%;
-      border-top: 5px solid #f4c70c;
-      position: relative;
-      bottom: 10px;
-    
-    }
-    
-    .links {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      height: 60px;
-    
-    
-    }
-    
-    
-    #middle>a {
-      margin-left: 35px;
-    
-    }
-    
-    
-    
-    @media (min-width: 501px) {
-        span.icon {
-          display: none;
-        }
-      
+  /* === Responsive Footer === */
+    @media (min-width: 640px) {
         span.text {
           display: inline-block;
+        }
+        span.icon {
+          display: none;
         }
       
         span.normal {
           display: inline-block;
         }
-      
         span.reduce {
           display: none;
         }
     }
     
-    @media (max-width: 640px) {  
+    @media (max-width: 640px) {
     
-      .contactInfo {
-    
-        display: flex;
-        justify-content: center;
-        flex-wrap:wrap;
-        text-align: center;
-        align-items: center;
-        padding: 0;
-        position: relative;
-        right: 0;
-        margin-left: 0;
-    
-    }
-    
-      .footer {
-        width: 100%;
-        border-top: 5px solid #f4c70c;
-        position: relative;
-        top: 50px;
+      span.text {
+        display: none;
       }
-    
-    
-      .links {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 60px;
-      }
-    }
-    
-    
-    @media (max-width: 540px) {
-    
       span.icon {
         display: inline-block;
       }
     
-      .icon>img {
-      min-width: 30px;	
-      }
-    
-      span.text {
-        display: none;
+      .icon img {
+        width: 30px;	
       }
     
       span.normal {
         display: none;
       }
-    
       span.reduce {
         display: inline-block;
       }
     
     
-      .content {
+    .footer {
+      position: relative;
+      float: inline-end;
+
+    }
+    
+    .links {
+      align-items: center;
+    }
+    
+    
+      #start {
         display: flex;
-        flex-wrap: wrap;
       }
-    
-      .footer {
-        width: 100%;
-        border-top: 5px solid #f4c70c;
-        position: relative;
-        top: 50px;
-      }
-    
-      .links {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 60px;
-      }
-    
       #middle {
         display: flex;
         /* border: 2px dotted yellow; */
+        align-items: center;
+        margin-right: 25px;
       }
     
       #middle>a {
-        display: flex;
-        justify-content: center;
-        margin-right: 20px;
+        padding: 20px;
+        margin-left: auto; 
+        margin-right: auto;
       }
       
       #end {
         display: flex;
-      
         gap:10px;
       }
     
