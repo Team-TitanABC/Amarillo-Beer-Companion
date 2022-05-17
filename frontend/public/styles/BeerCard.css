@@ -129,7 +129,7 @@
     font-size: 18px;
     border: none;
     color: #F4C70C;
-    padding: 4px 12px;
+    padding: 5px 12px;
 }
 
 .style-box {
@@ -160,5 +160,18 @@
 }
 
 .style-box {
-    margin-top: 80px;
+    margin-top: 50px;
 }
+
+/* ===== RESPONSIVE CODE ===== */
+  @media screen and (max-width : 640px) {
+
+    .style-box {
+          margin-top: auto;
+      }
+      
+    .style-col {
+          margin-top: 1rem;
+      }
+      
+  }
