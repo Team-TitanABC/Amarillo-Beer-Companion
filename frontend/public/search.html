@@ -13,14 +13,20 @@
 <body>
     <div class="container">
 
-    <header class="navigation">                  
-        <nav id="nav-left">
-            <a href="#" id="menu-icon"></a>
+        <header class="navigation">                  
+        <nav id="nav-left" class=menuToggle>
+            
+            <input name="toggle" type="checkbox" />
+            <label for=toggle">
+                <a href="#" id="menu-icon"></a>
+            </label>
             
             <ul class="nav">
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="contact.html">Contact</a></li>
+              <li><a href="#" id="login-resp">Login</a></li>
+    
             </ul>
             
         </nav>
@@ -37,7 +43,7 @@
             <ul class="nav">
                 <!-- <li><a href="search.html"><input id="nav-search" type="text" placeholder="Search Your Brew..." /></input></a></li> -->
     
-                <li><a href="#">Login</a></li>
+                <li><a href="#" id="login-main">Login</a></li>
             </ul>
             <div>
         </nav>              
@@ -49,11 +55,11 @@
             <aside class="search-bar">
 
 
-                <input id="userInput" placeholder="What'll ya' have?!"></input>
-                <button class="search-button" onclick="ButtonClicked('Name','getUserInputFromHtml')">
-                    <img src="images/search.png" />
-                </button>
-                
+                <input id="userInput" placeholder="What'll ya' have?!">
+                    <button class="search-button" onclick="ButtonClicked('Name','getUserInputFromHtml')">
+                        <img src="images/search.png" />
+                    </button>
+                </input>
                 
                 <div class="style-box">
                     <h2>Beer Styles</h2>
