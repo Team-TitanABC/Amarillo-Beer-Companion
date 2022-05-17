@@ -13,35 +13,40 @@
 <body>
     <div class="container">
 
-        <header class="navigation">
-            <nav id="nav-left">
+        <header class="navigation">                  
+        <nav id="nav-left" class=menuToggle>
+            
+            <input name="toggle" type="checkbox" />
+            <label for=toggle">
                 <a href="#" id="menu-icon"></a>
-
-                <ul class="nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-
-            </nav>
-
-            <nav id="nav-center">
-                <img src="images/ABC-Logo.png" width="100"></img>
-            </nav>
-
-            <nav id="nav-right">
-                <!-- <div id="search-menu-icon"> -->
+            </label>
+            
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#" id="login-resp">Login</a></li>
+            </ul>
+            
+        </nav>
+          
+        <nav id="nav-center">
+          <img src="images/ABC-Logo.png" width="100"></img>
+        </nav>
+          
+        <nav id="nav-right">
+            <!-- <div id="search-menu-icon"> -->
                 <a href="search.html"><img id="search-menu-icon" src="images/search-menu.png" /></a>
-                <!-- <div> -->
-                <div>
-                    <ul class="nav">
-                        <!-- <li><a href="search.html"><input id="nav-search" type="text" placeholder="Search Your Brew..." /></input></a></li> -->
-
-                        <li><a href="#">Login</a></li>
-                    </ul>
-                    <div>
-            </nav>
-        </header>
+            <!-- <div> -->
+            <div>
+            <ul class="nav">
+                <!-- <li><a href="search.html"><input id="nav-search" type="text" placeholder="Search Your Brew..." /></input></a></li> -->
+    
+                <li><a href="#" id="login-main">Login</a></li>
+            </ul>
+            <div>
+        </nav>              
+    </header>
 
         <main style="background-image:none;">
 
