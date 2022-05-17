@@ -13,40 +13,40 @@
 <body>
     <div class="container">
 
-        <header class="navigation">                  
-        <nav id="nav-left" class=menuToggle>
-            
-            <input name="toggle" type="checkbox" />
-            <label for=toggle">
+        <header class="navigation">
+            <nav id="nav-left" class="menuToggle">
+
+                <input name="toggle" type="checkbox" />
+                <label for="toggle">
                 <a href="#" id="menu-icon"></a>
             </label>
-            
-            <ul class="nav">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="#" id="login-resp">Login</a></li>
-            </ul>
-            
-        </nav>
-          
-        <nav id="nav-center">
-          <img src="images/ABC-Logo.png" width="100"></img>
-        </nav>
-          
-        <nav id="nav-right">
-            <!-- <div id="search-menu-icon"> -->
+
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" id="login-resp">Login</a></li>
+                </ul>
+
+            </nav>
+
+            <nav id="nav-center">
+                <img src="images/ABC-Logo.png" width="100"></img>
+            </nav>
+
+            <nav id="nav-right">
+                <!-- <div id="search-menu-icon"> -->
                 <a href="search.html"><img id="search-menu-icon" src="images/search-menu.png" /></a>
-            <!-- <div> -->
-            <div>
-            <ul class="nav">
-                <!-- <li><a href="search.html"><input id="nav-search" type="text" placeholder="Search Your Brew..." /></input></a></li> -->
-    
-                <li><a href="#" id="login-main">Login</a></li>
-            </ul>
-            <div>
-        </nav>              
-    </header>
+                <!-- <div> -->
+                <div>
+                    <ul class="nav">
+                        <!-- <li><a href="search.html"><input id="nav-search" type="text" placeholder="Search Your Brew..." /></input></a></li> -->
+
+                        <li><a href="#" id="login-main">Login</a></li>
+                    </ul>
+                    <div>
+            </nav>
+        </header>
 
         <main class="main-search" style="background-image:none;">
             <h1>Find Your Brewski</h1>
@@ -55,52 +55,52 @@
 
 
                 <input id="userInput" placeholder="What'll ya' have?!">
-                    <button class="search-button" onclick="ButtonClicked('Name','getUserInputFromHtml')">
+                <button class="search-button" onclick="ButtonClicked('Name','getUserInputFromHtml')">
                         <img src="images/search.png" />
                     </button>
                 </input>
-                
+
                 <div class="style-box">
                     <h2>Beer Styles</h2>
-                <div id="buttons">
-                    
-                    <button class="btn" onClick="ButtonClicked('Style', 'Lager')">Lager</button>
-                    <button class="btn" onClick="ButtonClicked('Style', 'Stout')">Stout</button>
-                    <button class="btn" onClick="ButtonClicked('Style', 'Fruit')">Fruit</button>
-                    <button class="btn" onClick="ButtonClicked('Style', 'Ale')">Ale</button>
-                    <button class="btn" onClick="ButtonClicked('Style', 'Pilsner')">Pilsner</button>
-                    <button class="btn" onClick="ButtonClicked('Style', 'Wheat')">Wheat</button>
-                    <button class="btn" onClick="ButtonClicked('Style', 'Amber')">Amber</button>
-                    <button class="btn" onClick="ButtonClicked('Style', 'Ipa')">Ipa</button>
-                    <button class="btn" onClick="ButtonClicked('Style', 'Bock')">Bock</button>
+                    <div id="buttons">
+
+                        <button class="btn" onClick="ButtonClicked('Style', 'Lager')">Lager</button>
+                        <button class="btn" onClick="ButtonClicked('Style', 'Stout')">Stout</button>
+                        <button class="btn" onClick="ButtonClicked('Style', 'Fruit')">Fruit</button>
+                        <button class="btn" onClick="ButtonClicked('Style', 'Ale')">Ale</button>
+                        <button class="btn" onClick="ButtonClicked('Style', 'Pilsner')">Pilsner</button>
+                        <button class="btn" onClick="ButtonClicked('Style', 'Wheat')">Wheat</button>
+                        <button class="btn" onClick="ButtonClicked('Style', 'Amber')">Amber</button>
+                        <button class="btn" onClick="ButtonClicked('Style', 'Ipa')">Ipa</button>
+                        <button class="btn" onClick="ButtonClicked('Style', 'Bock')">Bock</button>
                     </div>
                 </div>
-                
+
                 <div class="style-col">
                     <h2>Ingredients</h2>
                     <div id="buttons">
-                        
-                    <button class="btn" onClick="ButtonClicked('Ingredients', 'Caramel')">Caramel</button>
-                    <button class="btn" onClick="ButtonClicked('Ingredients', 'Barley')">Barley</button>
-                    <button class="btn" onClick="ButtonClicked('Ingredients', 'Hops')">Hops</button>
-                    <button class="btn" onClick="ButtonClicked('Ingredients', 'Pineapple')">Pineapple</button>
-                    <button class="btn" onClick="ButtonClicked('Ingredients', 'corn')">Corn</button>
-                    <button class="btn" onClick="ButtonClicked('Ingredients', 'Wheat')">Wheat</button>
-                    <button class="btn" onClick="ButtonClicked('Ingredients', 'Yeast')">Yeast</button>
-                    <button class="btn" onClick="ButtonClicked('Ingredients', 'Rasberry')">Rasberry</button>
-                    </div>
-                    
-                    </div>
-                    
-                    
-                    
-                    
 
- <p class="error"></p>
+                        <button class="btn" onClick="ButtonClicked('Ingredients', 'Caramel')">Caramel</button>
+                        <button class="btn" onClick="ButtonClicked('Ingredients', 'Barley')">Barley</button>
+                        <button class="btn" onClick="ButtonClicked('Ingredients', 'Hops')">Hops</button>
+                        <button class="btn" onClick="ButtonClicked('Ingredients', 'Pineapple')">Pineapple</button>
+                        <button class="btn" onClick="ButtonClicked('Ingredients', 'corn')">Corn</button>
+                        <button class="btn" onClick="ButtonClicked('Ingredients', 'Wheat')">Wheat</button>
+                        <button class="btn" onClick="ButtonClicked('Ingredients', 'Yeast')">Yeast</button>
+                        <button class="btn" onClick="ButtonClicked('Ingredients', 'Rasberry')">Rasberry</button>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <p class="error"></p>
             </aside>
 
             <div class="search-results">
-              
+
                 <!-- <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
@@ -124,9 +124,9 @@
                 </div>
 
                        -->
-           
+
             </div>
-           
+
 
         </main>
 
@@ -136,34 +136,34 @@
                     <span class="text"> <a href="contact.html">Contact Us</a> </span>
                     <span class="icon"> <a href="contact.html"> <img src="images/Contact Us.png" /> </a> </span>
                 </div>
-                
+
                 <div id="middle">
                     <a href="#">Privacy</a>
                     <span class="normal"> <a href="#">Terms of Use</a> </span>
                     <span class="reduce"> <a href="#">Terms</a> </span>
                 </div>
-                
+
                 <div id="end">
                     <span class="text"> <a href="https://www.facebook.com/AmarilloBeerCompanion" target=”_blank”>Facebook</a> </span>
                     <span class="icon"> <a href="https://www.facebook.com/AmarilloBeerCompanion" target=”_blank”> <img src="images/facebook.png" /> </a> </span>
-                        
-                        
+
+
                     <span class="text"> <a href="#" target=”_blank”>Twitter</a> </span>
                     <span class="icon"> <a href = "#" target=”_blank”> <img src = "images/twitter.png" /> </a> </span>
-                    
-                    
+
+
                     <span class="text"> <a href="https://www.instagram.com/amarillobeercompanion" target=”_blank”>Instagram</a> </span>
                     <span class="icon"> <a href="https://www.instagram.com/amarillobeercompanion" target=”_blank”>  <img src="images/instagram.png" /> </a> </span>
-                    
+
                 </div>
             </div>
         </div>
 
-    </div>
+        </div>
 
-    <script src="script.js" async></script>
-    
-   
+        <script src="script.js" async></script>
+
+
 
 </body>
 

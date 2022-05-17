@@ -14,7 +14,7 @@
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
 }
 
 .flip-card:hover .flip-card-inner {
@@ -84,8 +84,9 @@
 }
 
 .pla {
-    width: 100%;
+    width: 85%;
     height: 250px;
+    margin-bottom: 1rem;
     padding: 5px;
     background-color: black;
     border-radius: 10px;
@@ -163,15 +164,14 @@
     margin-top: 50px;
 }
 
-/* ===== RESPONSIVE CODE ===== */
-  @media screen and (max-width : 640px) {
 
+/* ===== RESPONSIVE CODE ===== */
+
+@media screen and (max-width: 640px) {
     .style-box {
-          margin-top: auto;
-      }
-      
+        margin-top: auto;
+    }
     .style-col {
-          margin-top: 1rem;
-      }
-      
-  }
+        margin-top: 1rem;
+    }
+}

@@ -1,257 +1,223 @@
-/* body {
-	background: black;
-	color: #ffffff;
-	font-family: arial;
-	width: 100%;
-	height: 896px;
-  } */
-
 p {
-	color: white;
+    color: white;
 }
 
 h1,
 h2,
 h3 {
-	color: white;
+    color: white;
 }
 
 .main-contact {
-	margin-bottom: 50px;
-	height: auto;
+    margin-bottom: 50px;
+    height: auto;
 }
 
 .contactFormBox {
-	display: flex;
-	flex-direction: column;
-	margin-left: 75px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 75px;
 }
 
 .top {
-	height: 130px;
+    height: 130px;
 }
-
 
 .title,
 h1 {
-	text-align: center;
-	color: #f4c70c;
+    text-align: center;
+    color: #f4c70c;
 }
 
 .field {
-	display: flex;
-	flex-direction: column;
-	justify-content: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .contact {
-	display: flex;
-	justify-content: end;
+    display: flex;
+    justify-content: end;
 }
 
 .content {
-
-	display: flex;
-	justify-content: space-between;
-
+    display: flex;
+    justify-content: space-between;
 }
 
 link {
-	color: #f4c70c
+    color: #f4c70c
 }
 
+
 /* Css for the form */
+
 .messageBox {
-	position: relative;
-	top: 45px;
+    position: relative;
+    top: 45px;
 }
 
 #mTitle {
-	display: flex;
-	justify-content: start;
-	position: relative;
-	bottom: 20px;
-	color: #f4c70c;
-
+    display: flex;
+    justify-content: start;
+    position: relative;
+    bottom: 20px;
+    color: #f4c70c;
 }
 
 #from_name {
-	margin-right: 10px;
-	/* margin-bottom: 10px; */
-	width: 150px;
+    margin-right: 10px;
+    /* margin-bottom: 10px; */
+    width: 150px;
 }
 
 #from_lastname {
-	width: 200px;
+    width: 200px;
 }
 
 #reply_to {
-	margin-bottom: 10px;
-	width: 350px;
+    margin-bottom: 10px;
+    width: 350px;
 }
 
 .userEmail {
-	display: flex;
-	flex-direction: column;
-	width: 148px;
+    display: flex;
+    flex-direction: column;
+    width: 148px;
 }
 
 .message {
-	display: flex;
-	flex-direction: column;
-	width: 350px;
-
+    display: flex;
+    flex-direction: column;
+    width: 350px;
 }
 
 #message {
-	padding-bottom: 150px;
-	box-sizing: border-box;
-	resize: none;
+    padding-bottom: 150px;
+    box-sizing: border-box;
+    resize: none;
 }
 
 .messageP {
-	position: relative;
-	bottom: 20px;
-	height: 60px;
-	width: 232px;
+    position: relative;
+    bottom: 20px;
+    height: 60px;
+    width: 232px;
 }
 
 .nameAndLast {
-	display: flex;
-	width: 148px;
+    display: flex;
+    width: 148px;
 }
 
 .fullName {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 #subtitle {
-	display: flex;
-	position: relative;
-	top: 20px;
-
+    display: flex;
+    position: relative;
+    top: 20px;
 }
 
 #labelName {
-	color: #ffffff;
+    color: #ffffff;
 }
 
 label {
-	color: white;
+    color: white;
 }
 
 #button {
-	border: 3px solid #F4C70C;
-	border-radius: 2px;
-	color: white;
-	background: rgba(0, 0, 0, 0.25);
-	padding: 5px 15px;
-	position: relative;
-	margin-top: 10px;
-	margin-left: 5px;
-	text-decoration: none;
-	cursor: pointer;
-	position: relative;
+    border: 3px solid #F4C70C;
+    border-radius: 2px;
+    color: white;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 5px 15px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
 }
 
 #button:link {
-	color: #ccc;
+    color: #ccc;
 }
 
 #button:visited {
-	color: white;
+    color: white;
 }
 
 #button:hover {
-	color: #F4C70C;
-	background: rgba(51, 51, 51, 0.5);
+    color: #F4C70C;
+    background: rgba(51, 51, 51, 0.5);
 }
 
 #button:active {
-	color: #800000;
+    color: #800000;
 }
+
 
 /* end css form */
 
 .contactInfo {
-
-	display: flex;
-	justify-content: space-between;
-	position: relative;
-	right: 550px;
-	padding-right: 150px;
-	margin-left: 675px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: 550px;
+    padding-right: 150px;
+    margin-left: 675px;
 }
-
-
 
 .address {
-	max-width: 300px;
-	width: 250px;
-	margin-right: 150px;
+    max-width: 300px;
+    width: 250px;
+    margin-right: 150px;
 }
+
 .address h1 {
-	text-align: start;
+    text-align: start;
 }
 
 .phone {
-	max-width: 300px;
-	width: 250px;
+    max-width: 300px;
+    width: 250px;
 }
+
 .phone h1 {
-	text-align: start;
+    text-align: start;
 }
 
 a {
-	color: #f4c70c;
-	text-decoration: none;
+    color: #f4c70c;
+    text-decoration: none;
 }
-
-
-
-
 
 @media (max-width: 640px) {
-	.content {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-
-	.contactInfo {
-
-		display: flex;
-		justify-content: center;
-		flex-wrap:wrap;
-		text-align: center;
-		align-items: center;
-		padding: 0;
-		position: relative;
-		right: 0;
-		margin-left: 0;
-
-	}
-
-	.address {
-
-		margin-right: 0;
-	}
-
-}
-
-
-@media (max-width: 540px) {
-
-	.content {
-		display: flex;
-		flex-wrap: wrap;
-
-	}
-	
-
-
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contactInfo {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        padding: 0;
+        position: relative;
+        right: 0;
+        margin-left: 0;
+    }
+    .contactFormBox {
+        margin-left: 0;
+    }
+    .address {
+        margin-right: 0;
+    }
 }
