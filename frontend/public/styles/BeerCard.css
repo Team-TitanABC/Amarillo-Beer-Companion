@@ -174,4 +174,7 @@
     .style-col {
         margin-top: 1rem;
     }
+    .flip-card {
+        margin-left: 0;
+    }
 }

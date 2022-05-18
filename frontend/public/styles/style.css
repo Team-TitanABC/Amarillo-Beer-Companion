@@ -277,6 +277,9 @@ a {
         /* position: fixed; */
         /* order: 1; */
     }
+    #search-container {
+        height: 100%;
+    }
     /* === Remove Delay === */
     .delay {
         animation: 0s fadeIn;
@@ -350,21 +353,28 @@ a {
     .footer {
       width: min-content;
     } */
-    .main-search h1 {
-        display: none;
-    }
     #userInput {
         margin-bottom: 0;
     }
     .main-search {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        height: 100%;
     }
     .search-bar {
-        order: 1;
+        flex: 1;
+        width: 100%;
+        height: 100%;
     }
     .search-results {
-        order: 2;
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        gap: 2.5rem;
+        padding-bottom: 3.5rem;
+        padding-left: 1.5rem;
         /* height: auto; */
         /* height: min-content; */
         /* height: max-content; */
