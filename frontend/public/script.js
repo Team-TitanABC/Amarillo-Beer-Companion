@@ -6,7 +6,8 @@ let beerCards = ""
 const locationURLS = {
 	georgiastreettaphouse: 'https://g.page/georgia-street-taphouse-amarillo?share',
 	texasfirehousesports: 'https://g.page/TexasFirehouse?share',
-	thebigtexan: 'https://goo.gl/maps/MyRbD9NmXjHLAdwH6'
+	thebigtexan: 'https://goo.gl/maps/MyRbD9NmXjHLAdwH6',
+  housedivide: 'https://goo.gl/maps/wKwqGgDdJ5k3sfNb8'
 }
 
 async function ButtonClicked(filter, input) {
@@ -20,14 +21,11 @@ async function ButtonClicked(filter, input) {
     if (input==="getUserInputFromHtml") input=document.getElementById("userInput").value
     const userInput = input.split(" ").join("_")
      
-    //console.log('userInput = ', userInput)
     const url = `/search/${filter}/${userInput}/`
     const rawRes = await fetch(url);
     const json = await rawRes.json();
     console.log("the response from the server is: ", json);
-    //document.getElementById('Name').innerText = json.name
-    //document.getElementById('Style').innerText = ""
-    // console.log(typeof json);
+
 
 	const gmaps = 'https://maps.google.com'
 
@@ -39,7 +37,7 @@ async function ButtonClicked(filter, input) {
 	  for (const [otherkey, othervalue] of Object.entries(value.Place)) {
 		let strippedSpaces = othervalue.replace(/\s+/g, '').toLowerCase().trim()
 		console.log(strippedSpaces)
-		places += `<a href="${locationURLS[strippedSpaces] ? locationURLS[strippedSpaces] : gmaps}" target="_blank"><p class="Place">${othervalue}</p></a>`
+		places += `<a href="${locationURLS[strippedSpaces] ? locationURLS[strippedSpaces] ? 'Walk-On"sSportsBistreaux' : gmaps : gmaps}" target="_blank"><p class="Place">${othervalue}</p></a>`
 	  }
 
       beerCards += `
@@ -68,18 +66,6 @@ async function ButtonClicked(filter, input) {
 		`
     }
 
-    //https://raw.githubusercontent.com/Team-TitanABC/Amarillo-Beer-Companion/main/PUBLIC/images/Beer/Shiner.png
-    // document.getElementById('imageElement' ).src = `https://github.com/Team-TitanABC/Amarillo-Beer-Companion/blob/main/frontend/public/images/beers/${json[0].Images}?raw=true`
-
-    // document.getElementById('Name').innerText = json[0].Name
-    // document.getElementById('Ingredients').innerText = json[0].Ingredients
-    // document.getElementById('Style').innerText = json[0].Style
-    // document.getElementById('Place').innerText = json[0].Place[0]
-    // document.getElementById('Placeone').innerText = json[0].Place[1]
-    // document.getElementById('Placetwo').innerText = json[0].Place[2]
-    // document.getElementById('Placethree').innerText = json[0].Place[3]
-    // document.getElementById('Placefour').innerText = json[0].Place[4]
-	//console.log(beerCards)
     searchBox.innerHTML = beerCards
 
     document.getElementsByClassName("error")[0].innerText = "";
