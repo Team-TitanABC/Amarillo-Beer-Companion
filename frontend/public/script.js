@@ -7,7 +7,7 @@ const locationURLS = {
 	georgiastreettaphouse: 'https://g.page/georgia-street-taphouse-amarillo?share',
 	texasfirehousesports: 'https://g.page/TexasFirehouse?share',
 	thebigtexan: 'https://goo.gl/maps/MyRbD9NmXjHLAdwH6',
-  housedivide: 'https://goo.gl/maps/wKwqGgDdJ5k3sfNb8'
+  housedivided: 'https://goo.gl/maps/wKwqGgDdJ5k3sfNb8'
 }
 
 async function ButtonClicked(filter, input) {
