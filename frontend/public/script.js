@@ -28,6 +28,7 @@ async function ButtonClicked(filter, input) {
 
 
 	const gmaps = 'https://maps.google.com'
+  const bistro = 'https://g.page/walkonsamarillo?share'
 
 
     for (const [key, value] of Object.entries(json)) {
@@ -37,7 +38,7 @@ async function ButtonClicked(filter, input) {
 	  for (const [otherkey, othervalue] of Object.entries(value.Place)) {
 		let strippedSpaces = othervalue.replace(/\s+/g, '').toLowerCase().trim()
 		console.log(strippedSpaces)
-		places += `<a href="${locationURLS[strippedSpaces] ? locationURLS[strippedSpaces] ? 'Walk-On"sSportsBistreaux' : 'https://g.page/walkonsamarillo?share' : gmaps}" target="_blank"><p class="Place">${othervalue}</p></a>`
+		places += `<a href="${locationURLS[strippedSpaces] ? locationURLS[strippedSpaces] : bistro}" target="_blank"><p class="Place">${othervalue}</p></a>`
 	  }
 
       beerCards += `
