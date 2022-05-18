@@ -8,14 +8,25 @@ const locationURLS = {
 	texasfirehousesports: 'https://g.page/TexasFirehouse?share',
 	thebigtexan: 'https://goo.gl/maps/MyRbD9NmXjHLAdwH6',
   housedivided: 'https://goo.gl/maps/wKwqGgDdJ5k3sfNb8',
-  pondasetabrewingco: 'https://goo.gl/maps/t1NyhpgzLxe3Pcrg7'
+  pondasetabrewingco: 'https://goo.gl/maps/t1NyhpgzLxe3Pcrg7',
+  'sixcarpub&brewery': 'https://g.page/sixcarpub?share'
   
 }
+
+const searchInput = document.getElementById('userInput')
+searchInput.addEventListener('keypress', function(event) {
+	//if user presses enter key
+	if (event.key === 'Enter') {
+		//cancel event and click the search button
+		event.preventDefault()
+		document.getElementById('searchIcon').click()
+	}
+})
 
 async function ButtonClicked(filter, input) {
 
   try {
-	  console.log(locationURLS)
+	  //console.log(locationURLS)
 
 	  beerCards = "";
     if (input==="getUserInputFromHtml") input=document.getElementById("userInput").value
