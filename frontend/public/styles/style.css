@@ -95,7 +95,7 @@ main {
 /* ===== LOGO-TEXT ANIMATION DELAY ===== */
 
 .delay {
-    animation: 24s fadeIn;
+    animation: 25s fadeIn;
     animation-fill-mode: forwards;
     visibility: hidden;
 }
