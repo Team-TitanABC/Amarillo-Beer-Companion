@@ -95,7 +95,7 @@ main {
 /* ===== LOGO-TEXT ANIMATION DELAY ===== */
 
 .delay {
-    animation: 24s fadeIn;
+    animation: 25s fadeIn;
     animation-fill-mode: forwards;
     visibility: hidden;
 }
@@ -381,6 +381,11 @@ a {
     }
 }
 
+@media (min-width: 640px) {
+   .main-search {
+       margin-bottom: -100px;
+   }
+}
 
 /* === Responsive Footer === */
 

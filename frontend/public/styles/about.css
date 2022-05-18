@@ -1,6 +1,16 @@
-      h1 {
+      .profiles a {
+            padding: 5px 10px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+      }
+      .profiles a:hover {
+            background-color: black;
+            border-radius: 10px; 
+      }
+      
+      h2 {
           font-weight: 800;
-          font-size: 40px;
+          font-size: 30px;
           /* width: 211px; */
           color: #F4C70C;
       }
@@ -75,6 +85,7 @@
       
       li {
           margin: .5rem 0;
+          color: white;
       }
       
       ul {
