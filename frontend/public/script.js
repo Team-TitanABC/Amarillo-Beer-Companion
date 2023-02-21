@@ -1,56 +1,53 @@
-
-const searchBox = document.querySelector(".search-results")
+const searchBox = document.querySelector('.search-results')
 const imageURLBase = 'https://github.com/Team-TitanABC/Amarillo-Beer-Companion/blob/main/frontend/public/images/beers/'
-let beerCards = ""
+let beerCards = ''
 
 const locationURLS = {
-	georgiastreettaphouse: 'https://g.page/georgia-street-taphouse-amarillo?share',
-	texasfirehousesports: 'https://g.page/TexasFirehouse?share',
-	thebigtexan: 'https://goo.gl/maps/MyRbD9NmXjHLAdwH6',
+  georgiastreettaphouse: 'https://g.page/georgia-street-taphouse-amarillo?share',
+  texasfirehousesports: 'https://g.page/TexasFirehouse?share',
+  thebigtexan: 'https://goo.gl/maps/MyRbD9NmXjHLAdwH6',
   housedivided: 'https://goo.gl/maps/wKwqGgDdJ5k3sfNb8',
   pondasetabrewingco: 'https://goo.gl/maps/t1NyhpgzLxe3Pcrg7',
-  'sixcarpub&brewery': 'https://g.page/sixcarpub?share'
-  
+  'sixcarpub&brewery': 'https://g.page/sixcarpub?share',
 }
 
 const searchInput = document.getElementById('userInput')
-searchInput.addEventListener('keypress', function(event) {
-	//if user presses enter key
-	if (event.key === 'Enter') {
-		//cancel event and click the search button
-		event.preventDefault()
-		document.getElementById('searchIcon').click()
-	}
+searchInput.addEventListener('keypress', function (event) {
+  //if user presses enter key
+  if (event.key === 'Enter') {
+    //cancel event and click the search button
+    event.preventDefault()
+    document.getElementById('searchIcon').click()
+  }
 })
 
 async function ButtonClicked(filter, input) {
-
   try {
-	  //console.log(locationURLS)
+    //console.log(locationURLS)
 
-	  beerCards = "";
-    if (input==="getUserInputFromHtml") input=document.getElementById("userInput").value
-    const userInput = input.split(" ").join("_")
-     
+    beerCards = ''
+    if (input === 'getUserInputFromHtml') input = document.getElementById('userInput').value
+    const userInput = input.split(' ').join('_')
+
     const url = `/search/${filter}/${userInput}/`
-    const rawRes = await fetch(url);
-    const json = await rawRes.json();
-    console.log("the response from the server is: ", json);
+    const rawRes = await fetch(url)
+    const json = await rawRes.json()
+    console.log('the response from the server is: ', json)
 
-
-	const gmaps = 'https://maps.google.com'
-  const bistro = 'https://g.page/walkonsamarillo?share'
-
+    // const gmaps = 'https://maps.google.com'
+    const bistro = 'https://g.page/walkonsamarillo?share'
 
     for (const [key, value] of Object.entries(json)) {
-      console.log("name: ", value.Name);
-	  let places = '';
-	  
-	  for (const [otherkey, othervalue] of Object.entries(value.Place)) {
-		let strippedSpaces = othervalue.replace(/\s+/g, '').toLowerCase().trim()
-		console.log(strippedSpaces)
-		places += `<a href="${locationURLS[strippedSpaces] ? locationURLS[strippedSpaces] : bistro}" target="_blank"><p class="Place">${othervalue}</p></a>`
-	  }
+      console.log('name: ', value.Name)
+      let places = ''
+
+      for (const [otherkey, othervalue] of Object.entries(value.Place)) {
+        let strippedSpaces = othervalue.replace(/\s+/g, '').toLowerCase().trim()
+        console.log(strippedSpaces)
+        places += `<a href="${
+          locationURLS[strippedSpaces] ? locationURLS[strippedSpaces] : bistro
+        }" target="_blank"><p class="Place">${othervalue}</p></a>`
+      }
 
       beerCards += `
 					<div class="flip-card active">
@@ -80,10 +77,10 @@ async function ButtonClicked(filter, input) {
 
     searchBox.innerHTML = beerCards
 
-    document.getElementsByClassName("error")[0].innerText = "";
+    document.getElementsByClassName('error')[0].innerText = ''
   } catch (err) {
-    console.log(err);
-    document.getElementsByClassName("error")[0].innerText = "Error!";
-    document.querySelector(".error").innerText = "Error!.";
+    console.log(err)
+    document.getElementsByClassName('error')[0].innerText = 'Error!'
+    document.querySelector('.error').innerText = 'Error!.'
   }
 }
